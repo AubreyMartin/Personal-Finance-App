@@ -1,8 +1,11 @@
 💰 Personal Finance App
 
-A modern personal finance dashboard built with React + TypeScript, focused on real-world financial tracking: transactions, budgets, savings pots, and recurring bills.
+A modern personal finance dashboard built with React + TypeScript, 
+focused on real-world financial tracking: 
+transactions, budgets, savings pots, and recurring bills.
 
-This project is based on a Frontend Mentor challenge and extended with scalable architecture, clean state management, and production-style planning.
+This project is based on a Frontend Mentor challenge and extended with scalable architecture, c
+lean state management, and production-style planning.
 
 🚀 Features
 
