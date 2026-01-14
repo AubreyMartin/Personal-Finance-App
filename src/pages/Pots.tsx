@@ -4,7 +4,7 @@ function Pots() {
       <h1>Pots</h1>
       <p>Pots page content will go here</p>
     </div>
-  )
+  );
 }
 
-export default Pots
+export default Pots;

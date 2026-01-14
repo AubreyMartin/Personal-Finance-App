@@ -7,6 +7,80 @@
   min-height: 100vh;
 }
 
+/* =========================
+   Typography Presets
+========================= */
+
+/* Text Preset 1 - 32px, 120%, 0 letter-spacing, Bold */
+.text-preset-1 {
+  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+/* Text Preset 2 - 20px, 120%, 0 letter-spacing, Bold */
+.text-preset-2 {
+  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+/* Text Preset 3 - 16px, 150%, 0 letter-spacing, Bold */
+.text-preset-3 {
+  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+/* Text Preset 4 - 14px, 150%, 0 letter-spacing, Regular */
+.text-preset-4 {
+  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+/* Text Preset 4 Bold - 14px, 150%, 0 letter-spacing, Bold */
+.text-preset-4-bold {
+  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+/* Text Preset 5 - 12px, 150%, 0 letter-spacing, Regular */
+.text-preset-5 {
+  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+/* Text Preset 5 Bold - 12px, 150%, 0 letter-spacing, Bold */
+.text-preset-5-bold {
+  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
 .layout {
   display: flex;
   min-height: 100vh;
@@ -159,12 +233,11 @@
 .overview-card .CB {
   width: 214px;
   height: 119px;
-
-  padding: 24px;
+  padding: 20px 0px 0px 15px;
   border-radius: 20px;
-
   background: #000;
   color: #ffeded;
+  text-align: start;
 }
 
 .overview-card .displayincome,
@@ -185,4 +258,70 @@
   border-radius: 20px;
   padding: 32px;
   background: red;
+}
+
+/* =========================
+     Pots Card
+  ========================= */
+.overview-display-pot {
+  background-color: rgb(151, 171, 169);
+  width: 608px;
+  height: 218px;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.overview-display-pot .overview-pot-row1 {
+  width: 544px;
+  height: 24px;
+  background-color: ;
+  display: flex;
+  grid-column: span;
+  gap: 400px;
+}
+.overview-display-pot .overview-pot-row1 .see-details {
+  background-color: transparent;
+  width: 98px;
+  height: 21px;
+  border: 0;
+}
+
+.overview-display-pot .overview-display-pot-row-2 {
+  width: 544px;
+  height: 110px;
+  background-color: 0;
+  display: flex;
+  grid-column: 1/ -1;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.overview-display-pot
+  .overview-display-pot-row-2
+  .pot-total-saved
+  .pot-total-saved-logo {
+  padding: 10px 0px 10px 30px;
+}
+
+.overview-display-pot .overview-display-pot-row-2 .pot-total-saved {
+  width: 247px;
+  height: 110px;
+  background-color: yellowgreen;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.overview-display-pot
+  .overview-display-pot-row-2
+  .overview-display-pot-secound-half {
+  width: 247px;
+  height: 110px;
+  background-color: rgb(219, 161, 15);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
 }
