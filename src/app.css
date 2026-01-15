@@ -140,20 +140,16 @@
 .sidebar-nav-link {
   width: 100%;
   padding: 0.75rem 1.5rem;
-
   display: flex;
   align-items: center;
   gap: 1rem;
-
   background: none;
   border: none;
   cursor: pointer;
-
   color: #fff;
   text-decoration: none;
   font: inherit;
   text-align: left;
-
   position: relative;
   transition: background-color 0.2s, color 0.2s;
 }
@@ -221,10 +217,8 @@
   margin: 32px 0;
   width: 1060px;
   height: 119px;
-
   display: flex;
   gap: 24px;
-
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -244,10 +238,8 @@
 .overview-card .displayExp {
   width: 399px;
   height: 119px;
-
   padding: 24px;
   border-radius: 20px;
-
   background: #fff;
   color: #000;
 }
@@ -324,4 +316,69 @@
   align-items: center;
   border-radius: 20px;
   padding: 20px;
+}
+
+.overview .overview-transaction {
+  width: 608px;
+  height: 519px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 20px;
+}
+.overview .overview-transaction .overview-transaction-line1 {
+  width: 544px;
+  height: 24px;
+  background-color: ;
+  display: flex;
+  grid-column: span;
+  gap: 350px;
+  padding: 0px 0px 0px 0px;
+}
+
+.overview .overview-transaction .view-all {
+  background-color: transparent;
+  border: #000;
+  width: 77px;
+  height: 21px;
+}
+
+.overview .overview-transaction .overview-transaction-line2 {
+  width: 544px;
+  height: 47px;
+  background-color: whitesmoke;
+  display: flex;
+  grid-column: span;
+  gap: 0px;
+  text-align: end;
+  margin-top: 32px;
+  border: 5ch blue;
+}
+
+.overview .overview-transaction .overview-transaction-line2 .section1 {
+  display: flex;
+  grid-column: span;
+  gap: 16px;
+  text-align: center;
+  padding: 0px;
+  width: 474px;
+  height: 40px;
+  align-items: center;
+}
+
+.overview .overview-transaction .overview-transaction-line2 .section1 .dp {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  padding: px;
+  display: flex;
+  margin-top: 5px;
+}
+
+.overview .overview-transaction .overview-transaction-line2 .section1 .label {
+  text-align: center;
+  padding: 5px 0px 0px 0px;
+}
+.overview .overview-transaction .overview-transaction-line2 .section2 {
+  width: 71px;
+  height: 47px;
 }
