@@ -1,13 +1,17 @@
 import { useEffect, useState } from 'react';
+import type { Transaction } from '../types';
 
 function Overview() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<Transaction[]>([]);
 
   useEffect(() => {
     fetch('/data.json')
       .then((res) => res.json())
-      .then((transationdata) => {
+      .then((transationdata: { transactions: Transaction[] }) => {
         setData(transationdata.transactions.slice(0, 5));
+      })
+      .catch((error) => {
+        console.error('Failed to load transactions data', error);
       });
   }, []);
 
@@ -92,17 +96,17 @@ function Overview() {
                   <p className=" text-preset-2"> Transaction </p>
                   <button className="view-all text-preset-4">View All</button>
                 </div>
-                {data.map((Transaction) => (
-                  <div className="overview-transaction-line2">
+                {data.map((transaction) => (
+                  <div className="overview-transaction-line2" key={transaction.date + transaction.name}>
                     <div className="section1">
-                      <img src={Transaction.avatar} alt="" className="dp" />{' '}
-                      <p className="label text-preset-4-bold">{Transaction.name}</p>
+                      <img src={transaction.avatar} alt="" className="dp" />
+                      <p className="label text-preset-4-bold">{transaction.name}</p>
                     </div>
                     <div className="section2">
-                      <p className="amount text-preset-4-bold"> ${Transaction.amount}</p>
+                      <p className="amount text-preset-4-bold"> ${transaction.amount}</p>
 
                       <p className="dates  text-preset-5">
-                        {new Date(Transaction.date).toLocaleDateString('en-GB', {
+                        {new Date(transaction.date).toLocaleDateString('en-GB', {
                           day: 'numeric',
                           month: 'short',
                           year: 'numeric',
