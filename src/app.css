@@ -337,7 +337,7 @@
 .overview-c2 {
   width: 428px;
   height: 761px;
-  background-color: ;
+  background-color: transparent;
   border-radius: 20px;
 }
 
@@ -422,7 +422,6 @@
   border-radius: 20px;
   margin-bottom: 24px;
   display: flex;
-  grid-row: ;
 
 }
 
@@ -473,7 +472,7 @@
   display: flex;
   grid-column: auto;
   gap: 250px;
-  background-color: F8F4F0;
+  background-color: #F8F4F0;
 }
 
 .overview-c2 .overview-recurring-bill .overview-recurring-bill-list .total-upcoming {
@@ -482,8 +481,8 @@
   display: flex;
   grid-column: auto;
   gap: 200px;
-  padding: ;
-  background-color: F8F4F0;
+  padding: 0;
+  background-color: #F8F4F0;
 }
 
 .overview-c2 .overview-recurring-bill .overview-recurring-bill-list .due-soon {
@@ -492,7 +491,7 @@
   display: flex;
   grid-column: auto;
   gap: 250px;
-  background-color: F8F4F0;
+  background-color: #F8F4F0;
 }
 
 
@@ -519,9 +518,7 @@
 
 .transaction-inputfield-dropdown {
   display: flex;
-  grid-column: span;
   gap: 100px;
-  gap: ;
 }
 
 .transaction-description {
@@ -531,7 +528,6 @@
   height: 42px;
   display: flex;
   padding: 12px 16px 12px 16px;
-  grid-column: span;
   gap: 100px;
   background-color: aquamarine;
 }
@@ -541,9 +537,8 @@
   height: 64px;
   background-color: burlywood;
   display: flex;
-  grid-column: span;
   gap: 361px;
-  padding: ;
+  padding: 0;
 }
 
 .page-transactions .transaction-log {
@@ -551,7 +546,6 @@
   height: 40px;
   background-color: yellowgreen;
   display: flex;
-  grid-column: span;
 }
 
 .transaction-log .dp {
