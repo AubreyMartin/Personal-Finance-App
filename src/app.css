@@ -383,12 +383,13 @@
 .overview .overview-transaction .overview-transaction-line2 {
   width: 544px;
   height: 47px;
-  /* background-color: whitesmoke; */
+  /* background-color: red; */
   display: flex;
   grid-column: span;
   gap: 0px;
   text-align: end;
   margin-top: 32px;
+
 }
 
 .overview .overview-transaction .overview-transaction-line2 .section1 {
@@ -506,50 +507,391 @@
   padding: 32px;
 }
 
-.transaction-inputfield {
+.transaction-controls {
   width: 996px;
   height: 45px;
-  background-color: blue;
+  /* background-color: blue; */
   display: flex;
   grid-column: span;
-  gap: 500px;
+  gap: 50px;
   padding: 10px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
 }
 
-.transaction-inputfield-dropdown {
+.transaction-search {
+  flex: 1;
+  padding: 8px 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  width: 320px;
+  height: 45px;
+}
+
+.transaction-controls-dropdown {
   display: flex;
-  gap: 100px;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 438px;
+  height: 45px;
+  /* background-color: pink; */
+  align-items: center;
+
+}
+
+.transaction-sort {
+  width: 113px;
+  height: 45px;
+  padding: 8px 0px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.transaction-category {
+  padding: 8px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #fff;
+  width: 177px;
+  height: 45px;
 }
 
 .transaction-description {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  /* margin-top: 24px;
+  margin-bottom: 24px; */
   width: 996px;
+
   height: 42px;
   display: flex;
   padding: 12px 16px 12px 16px;
   gap: 100px;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+
 }
+
+.transaction-description .transaction-name {
+  width: 428px;
+  height: 18px;
+}
+
+.transaction-description .transaction-elements {
+  display: flex;
+  grid-column: span;
+  gap: 20px;
+
+}
+
+.transaction-elements-category {
+  width: 120px;
+
+}
+
+.transaction-elements-transactiondate {
+  width: 120px;
+}
+
+.transaction-elements-amount {
+  width: 200px;
+  text-align: end;
+}
+
+
+
+
+
+.page-transactions .transaction-log {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+
+.page-transactions .transaction-row {
+  width: 996px;
+  height: 40px;
+  /* background-color: yellowgreen; */
+  display: flex;
+  grid-column: span;
+  gap: 0px;
+  padding-top: 0px;
+  box-shadow: 0px 0px 5px rgba(175, 174, 174, 0.06);
+  margin: 16px 0px 16px 0px;
+  border-radius: 20px;
+
+}
+
+.transaction-row .dp {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  align-items: center;
+
+
+
+}
+
+.transaction-row .dp-name {
+  display: flex;
+  grid-column: span;
+  gap: 10px;
+  align-items: center;
+  width: 428px;
+  height: 40px;
+  padding-left: 10px;
+
+}
+
+.transaction-row .cta {
+  display: flex;
+  grid-column: span;
+  gap: 50px;
+  align-items: center;
+  padding-left: 15px;
+
+
+}
+
+.transaction-row .cta-category {
+  text-align: start;
+  width: 120px;
+  padding-left: 60px;
+}
+
+.transaction-row .cta-dates {
+  text-align: start;
+  width: 120px;
+  padding-left: 40px;
+
+}
+
+.transaction-row .cta-amount {
+  text-align: end;
+  width: 200px;
+
+}
+
+/* =========================footer Section ========================= */
 
 .transaction-footer {
   width: 996px;
   height: 64px;
-  background-color: burlywood;
+  background-color: 0;
   display: flex;
-  gap: 361px;
-  padding: 0;
+  grid-column: span;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+
+
 }
 
-.page-transactions .transaction-log {
-  width: 996px;
+.transaction-footer-pages {
+  display: flex;
+  gap: 8px;
+}
+
+.transaction-footer-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+
+
+}
+
+.transaction-footer-buttons-pev {
+  background-color: transparent;
+  width: 93px;
   height: 40px;
-  background-color: yellowgreen;
-  display: flex;
+  border-radius: 10px;
 }
 
-.transaction-log .dp {
+.transaction-footer-pages-1-4 {
+  width: 232px;
+  display: flex;
+  gap: 5px;
+
+}
+
+.transaction-footer-pages-button {
   width: 40px;
   height: 40px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+
+
+.transaction-footer-buttons-next {
+  background-color: transparent;
+  width: 93px;
+  height: 40px;
+  border-radius: 10px;
+
+
+}
+
+
+
+
+
+/* =========================
+    Recurring page
+  ========================= */
+
+
+.page-recurring {
+  width: 1060px;
+  height: 742px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
   border-radius: 20px;
+}
+
+.page-recurring-totalbills {
+  width: 337px;
+  height: 190px;
+  background-color: black;
+  border-radius: 20px;
+  padding: 24px;
+  color: white;
+
+
+}
+
+.page-recurring-totalbills-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 32px;
+}
+
+
+
+.page-recurring-summary {
+  width: 337px;
+  height: 204px;
+  padding: 20px;
+  /* background-color: red; */
+  border-radius: 20px;
+  margin-top: 24px;
+
+
+
+}
+
+.page-recurring-summary-PB {
+  display: flex;
+  grid-row: span;
+  justify-content: space-between;
+  margin: 16px 0px 16px 0px;
+}
+
+
+.page-recurring-billslogs {
+  width: 699px;
+  height: 742px;
+  padding: 32px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+
+
+.page-recurring-controls {
+  width: 635px;
+  height: 45px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.recurring-search {
+  flex: 1;
+  padding: 8px 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  width: 320px;
+  height: 45px;
+}
+
+
+.recurring-controls-dropdown {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 438px;
+  height: 45px;
+  /* background-color: pink; */
+  align-items: center;
+}
+
+
+.recurring-descriptions {
+  width: 635px;
+  height: 42px;
+  background-color: ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px 12px 16px;
+  margin: 24px 0px 24px 0px;
+
+
+
+}
+
+
+
+
+
+.page-transactions .recurring-log {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+
+}
+
+.page-recurring .recurring-row {
+  width: 635px;
+  height: 32px;
+  /* background-color: yellowgreen; */
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px rgba(175, 174, 174, 0.06);
+  margin: 16px 0px 16px 0px;
+  padding: 0px 16px 0px 16px;
+
+}
+
+.recurring-row .dp {
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.recurring-row-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: ;
+  width: 100%;
+  padding-left: 70px;
+}
+
+.recurring-dp-name {
+  display: flex;
+  grid-column: span;
+  gap: 10px;
+  align-items: center;
+  width: 319px;
+  height: 32px;
+
+
 }
