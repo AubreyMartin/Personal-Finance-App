@@ -90,8 +90,8 @@ function Recurring() {
             {data
               .filter(transaction => transaction.recurring)
 
-              .map((transaction) => (
-                <div className="recurring-row" key={transaction.id}>
+              .map((transaction, index) => (
+                <div className="recurring-row" key={index}>
 
                   <div className="recurring-dp-name">
                     <img src={transaction.avatar} alt="" className="dp" />

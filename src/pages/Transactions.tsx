@@ -71,8 +71,8 @@ function Transactions() {
 
 
         <div className="transaction-log">
-          {data.map((transaction) => (
-            <div className="transaction-row" key={transaction.id}>
+          {data.map((transaction, index) => (
+            <div className="transaction-row" key={index}>
               <div className="dp-name">
                 <img src={transaction.avatar} alt="" className="dp" />
                 <p className="label text-preset-4-bold">{transaction.name}</p>
