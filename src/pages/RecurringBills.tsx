@@ -23,24 +23,24 @@ function Recurring() {
 
         <div className="total-summary">
           <div className="page-recurring-totalbills">
-            <div className="page-recurring-totalbills-icon">  icon
+            <div className="page-recurring-totalbills-icon">  <img src="public/assets/images/icon-recurring-bills.svg" alt="" />
             </div>
             <div>
-              <h3>Total Bills</h3>
-              <div>$384.98</div>
+              <h3 className=' text-preset-4'>Total Bills</h3>
+              <div className=' text-preset-1'>$384.98</div>
             </div>
           </div>
           <div className="page-recurring-summary">
-            <h1>Summary</h1>
+            <div className=' text-preset-3'>Summary</div>
             <div className="page-recurring-summary-PB" >
-              <div>Paid Bills </div>
-              <div>4 ($190.00)</div></div>
+              <div className=' text-preset-5'>Paid Bills </div>
+              <div className=' text-preset-5-bold'>4 ($190.00)</div></div>
             <div className="page-recurring-summary-PB">
-              <div >Total Upcoming </div>
-              <div>4 ($194.98)</div></div>
+              <div className=' text-preset-5' >Total Upcoming </div>
+              <div className=' text-preset-5-bold'>4 ($194.98)</div></div>
             <div className="page-recurring-summary-PB">
-              <div>Due Soon </div>
-              <div>$2 ($59.98)</div>
+              <div className=' text-preset-5' >Due Soon </div>
+              <div className=' text-preset-5-bold'>$2 ($59.98)</div>
             </div>
           </div>
         </div>

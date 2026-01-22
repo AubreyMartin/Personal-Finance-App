@@ -22,18 +22,18 @@ function Overview() {
       <div className="overview-card">
         <div className="row1">
           <div className="CB">
-            <h2>Current Balance</h2>
-            <p>$4,836.00</p>
+            <h2 className=' text-preset-4'>Current Balance</h2>
+            <p className=' text-preset-1'>$4,836.00</p>
           </div>
 
           <div className="displayincome">
-            <h2>Income</h2>
-            <p>$3,814.25</p>
+            <h2 className=' text-preset-4'>Income</h2>
+            <p className=' text-preset-1' >$3,814.25</p>
           </div>
 
-          <div className="displayExp">
-            <h2>Expenses</h2>
-            <p>$1,700.50</p>
+          <div className="displayincome">
+            <h2 className=' text-preset-4'>Expenses</h2>
+            <p className=' text-preset-1'>$1,700.50</p>
           </div>
         </div>
 
@@ -49,8 +49,10 @@ function Overview() {
 
             <div className="overview-pot">
               <div className="overview-pot-row1">
-                <h3>Pots</h3>
-                <button className="see-details">See Details</button>
+                <div className=' text-preset-2'>Pots</div>
+                <button className="see-details text-preset-4">See Details
+                  <img src="public/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
+                </button>
               </div>
 
               <div className="overview-display-pot-row-2">
@@ -60,27 +62,27 @@ function Overview() {
                   </div>
 
                   <div className="pot-total-saved-text">
-                    <p className="pot-total-lable">Total Saved</p>
-                    <p className="pot-total-amount">$999</p>
+                    <p className="pot-total-lable text-preset-4 ">Total Saved</p>
+                    <p className="pot-total-amount text-preset-1 ">$850</p>
                   </div>
                 </div>
 
                 {/* center:  two pots  */}
                 <div className="overview-display-pot-row-2-secound-half">
                   <div className="overview-display-pot-c-1">
-                    <p className="pot-savings-lable">Savings</p>
-                    <p className="pot-savings-amount">$000</p>
-                    <p className="pot-gift-label">Gift</p>
-                    <p className="pot-gift-amount">$000</p>
+                    <p className="pot-savings-lable text-preset-5 ">Savings</p>
+                    <p className="pot-savings-amount text-preset-4-bold">$159</p>
+                    <p className="pot-gift-label text-preset-5">Gift</p>
+                    <p className="pot-gift-amount text-preset-4-bold">$40</p>
                   </div>
 
                   {/* Right: Last two pots */}
 
                   <div className="overview-display-pot-c-2">
-                    <p className="pot-Concert-lable">Concert Ticket</p>
-                    <p className="pot-Concert-amount">$000</p>
-                    <p className="pot-Laptop-label">New Laptop</p>
-                    <p className="pot-Laptop-Amount">$000</p>
+                    <p className="pot-Concert-lable text-preset-5">Concert Ticket</p>
+                    <p className="pot-Concert-amount text-preset-4-bold">$110</p>
+                    <p className="pot-Laptop-label text-preset-5">New Laptop</p>
+                    <p className="pot-Laptop-Amount text-preset-4-bold">$10</p>
                   </div>
                 </div>
               </div>
@@ -94,7 +96,9 @@ function Overview() {
               <div>
                 <div className="overview-transaction-line1">
                   <p className=" text-preset-2"> Transaction </p>
-                  <button className="view-all text-preset-4">View All</button>
+                  <button className="view-all text-preset-4">View All
+                    <img src="public/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
+                  </button>
                 </div>
                 {data.map((transaction) => (
                   <div className="overview-transaction-line2" key={transaction.date + transaction.name}>
@@ -132,14 +136,18 @@ function Overview() {
             <div className="overview-budgets">
               <div className="overview-budgets-row1">
                 <h2>Budgets</h2>
-                <button className="see-details">See Details</button>
+                <button className="see-details">See Details
+                  <img src="public/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
+                </button>
               </div>
             </div>
 
             <div className="overview-recurring-bill">
               <div className="overview-recurring-bill-row1">
                 <h3>Recurring Bills</h3>
-                <button className="see-details">See Details</button>
+                <button className="see-details">See Details
+                  <img src="public/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
+                </button>
               </div>
 
               <div className="overview-recurring-bill-list" >

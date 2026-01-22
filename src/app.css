@@ -212,6 +212,11 @@
 /* =========================
      Overview Page
   ========================= */
+.arrowright {
+  height: 12px;
+  width: 12px;
+  margin-left: 10px;
+}
 
 .overview-card .row1 {
   margin: 32px 0;
@@ -219,9 +224,7 @@
   height: 119px;
   display: flex;
   gap: 24px;
-  background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .overview-card .CB {
@@ -234,14 +237,17 @@
   text-align: start;
 }
 
-.overview-card .displayincome,
-.overview-card .displayExp {
+.overview-card .displayincome {
+
   width: 399px;
   height: 119px;
   padding: 24px;
   border-radius: 20px;
   background: #fff;
   color: #000;
+
+
+
 }
 
 /* .overview-card .overviewdisplaypot {
@@ -268,7 +274,7 @@
 .overview-cluster {
   height: 761px;
   width: 1060px;
-  background-color: #F8F4F0;
+  background-color: 0;
   border-radius: 20px;
   display: flex;
   grid-column: 1.1;
@@ -278,7 +284,6 @@
 .overview-c1 {
   height: 761px;
   width: 608px;
-  /* background-color: #000; */
 
 
 }
@@ -286,7 +291,7 @@
 .overview-c1 .overview-pot {
   width: 608px;
   height: 218px;
-  background-color: FFFFFF;
+  background-color: white;
   border-radius: 24px;
   padding: 24px;
 
@@ -296,8 +301,8 @@
   width: 544px;
   height: 24px;
   display: flex;
-  grid-column: span;
-  gap: 300px;
+  justify-content: space-between;
+
 
 }
 
@@ -356,7 +361,7 @@
 .overview .overview-transaction {
   width: 608px;
   height: 519px;
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 20px;
   margin-top: 24px;
   padding: 24px;
@@ -368,8 +373,7 @@
   height: 24px;
   /* background-color: ; */
   display: flex;
-  grid-column: span;
-  gap: 350px;
+  justify-content: space-between;
   padding: 0px 0px 0px 0px;
 }
 
@@ -378,6 +382,8 @@
   border: #000;
   width: 77px;
   height: 21px;
+
+
 }
 
 .overview .overview-transaction .overview-transaction-line2 {
@@ -419,7 +425,7 @@
   width: 428px;
   height: 410px;
   padding: 24px;
-  background-color: #F8F4F0;
+  background-color: white;
   border-radius: 20px;
   margin-bottom: 24px;
   display: flex;
@@ -431,8 +437,7 @@
   width: 364px;
   height: 24px;
   display: flex;
-  grid-column: span;
-  gap: 180px;
+  justify-content: space-between;
   padding: 0;
 }
 
@@ -441,7 +446,7 @@
   height: 327px;
   padding: 24px;
   border-radius: 20px;
-  background-color: #F8F4F0;
+  background-color: white;
 
 }
 
@@ -473,7 +478,7 @@
   display: flex;
   grid-column: auto;
   gap: 250px;
-  background-color: #F8F4F0;
+  background-color: 0;
 }
 
 .overview-c2 .overview-recurring-bill .overview-recurring-bill-list .total-upcoming {
@@ -483,7 +488,7 @@
   grid-column: auto;
   gap: 200px;
   padding: 0;
-  background-color: #F8F4F0;
+  background-color: 0;
 }
 
 .overview-c2 .overview-recurring-bill .overview-recurring-bill-list .due-soon {
@@ -492,7 +497,7 @@
   display: flex;
   grid-column: auto;
   gap: 250px;
-  background-color: #F8F4F0;
+  background-color: 0;
 }
 
 
@@ -503,7 +508,8 @@
 .page-transactions {
   width: 1060px;
   height: 983px;
-  background-color: whitesmoke;
+  background-color: white;
+  border-radius: 20px;
   padding: 32px;
 }
 
@@ -746,7 +752,7 @@
 .page-recurring {
   width: 1060px;
   height: 742px;
-  background-color: white;
+  background-color: 0;
   display: flex;
   justify-content: flex-start;
   gap: 24px;
@@ -776,7 +782,7 @@
   width: 337px;
   height: 204px;
   padding: 20px;
-  /* background-color: red; */
+  background-color: white;
   border-radius: 20px;
   margin-top: 24px;
 
@@ -796,7 +802,7 @@
   width: 699px;
   height: 742px;
   padding: 32px;
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 20px;
 }
 
@@ -894,4 +900,106 @@
   height: 32px;
 
 
+}
+
+
+
+
+/* =========================
+    Pots page
+  ========================= */
+.page-pots {
+  width: 1060px;
+  height: 973px;
+  border-radius: 20px;
+  background-color: #;
+  margin-top: 32px;
+
+
+
+
+}
+
+.pot-T-B {
+  background-color: 0;
+  width: 1060px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  padding: ;
+}
+
+.pot-add-button {
+  background-color: black;
+  color: white;
+  border: #000;
+  width: 129px;
+  height: 53px;
+  border-radius: 10px;
+
+}
+
+.pots-components {
+  width: 1060px;
+  height: 303px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.pots-components-template {
+  width: 518px;
+  height: 303px;
+  background-color: 0;
+  background-color: white;
+  border-radius: 20px;
+  padding: 24px;
+
+
+}
+
+.pots-components-buttons {
+  width: 470px;
+  height: 53px;
+  background-color: 0;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.pots-components-each-button {
+  width: 227px;
+  background-color: #F8F4F0;
+  color: black;
+  border-radius: 10px;
+  border: 0;
+}
+
+.pots-components-progress-bar {
+  width: 470px;
+  height: 114px;
+  /* background-color: lightgray; */
+}
+
+.pots-components-progress-bar-details {
+  display: flex;
+  justify-content: space-between;
+
+  /* background-color: lightgreen; */
+  color: #696868;
+}
+
+
+.pots-components-r1 {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.controls-dots-button {
+  width: 16px;
+  height: 16px;
+  border: #000;
+  background-color: transparent;
 }

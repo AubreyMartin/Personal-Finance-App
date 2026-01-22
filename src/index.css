@@ -12,8 +12,7 @@
 
 @font-face {
   font-family: "Public Sans";
-  src: url("/assets/fonts/PublicSans-Italic-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("/assets/fonts/PublicSans-Italic-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -26,7 +25,7 @@
   font-weight: 400;
 
   color: rgba(14, 14, 14, 0.87);
-  background-color: #ffeded;
+  background-color: #F8F4F0;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
