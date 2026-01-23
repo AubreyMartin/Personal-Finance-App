@@ -100,6 +100,9 @@ function Overview() {
                     <img src="public/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
                   </button>
                 </div>
+
+
+
                 {data.map((transaction) => (
                   <div className="overview-transaction-line2" key={transaction.date + transaction.name}>
                     <div className="section1">
@@ -118,6 +121,9 @@ function Overview() {
                       </p>
                     </div>
                   </div>))}
+
+
+
               </div>
             </div>
           </div>

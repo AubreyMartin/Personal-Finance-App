@@ -1003,3 +1003,195 @@
   border: #000;
   background-color: transparent;
 }
+
+
+
+/* =========================
+    budgets page
+  ========================= */
+
+
+
+.budgets-components {
+  background-color: ;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.budgets-component-graph {
+  width: 428px;
+  height: 599px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.budgets-component-fig {
+  width: 364px;
+  height: 280px;
+  background-color: lightgoldenrodyellow;
+  margin-bottom: 32px;
+  text-align: center;
+
+
+}
+
+.budgets-components-template {
+  width: 608px;
+  height: 510px;
+  background-color: 0;
+  background-color: white;
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 24px;
+
+
+}
+
+.budgets-components-r1 {
+
+  margin-bottom: 20px;
+}
+
+
+.budgets-components-transaction-log {
+  background-color: #F8F4F0;
+  width: 544px;
+  height: 254px;
+  border-radius: 20px;
+  padding: 20px;
+
+}
+
+.budgets-component-pot-row1 {
+  width: 504px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.budgets-components-progress-bar {
+  width: 470px;
+  height: 114px;
+  margin-bottom: 20px;
+  /* background-color: lightgray; */
+}
+
+
+.progress {
+  width: 100%;
+  height: 24px;
+  background: #eee9e4;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  margin-top: 16px;
+
+}
+
+.progress-fill {
+  width: 30%;
+  /* <-- tweak this */
+  height: 100%;
+  background: #2f7f7a;
+  border-radius: 5px;
+}
+
+
+
+.budgets-components-progress-bar-details {
+  display: flex;
+  justify-content: space-between;
+  color: #696868;
+  margin-bottom: 20px;
+}
+
+.spentline {
+  position: relative;
+  width: 264px;
+  height: 43px;
+  background-color: 0;
+  border-radius: 6px;
+  padding-left: 16px;
+  /* important */
+
+
+}
+
+.spentline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: px;
+  width: 4px;
+  height: 43px;
+  background-color: #277C78;
+  border-radius: 999px;
+
+}
+
+.Remainingline {
+  position: relative;
+  width: 264px;
+  height: 43px;
+  background-color: 0;
+  border-radius: 6px;
+  padding-left: 16px;
+}
+
+.Remainingline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: px;
+  width: 4px;
+  height: 43px;
+  background-color: #F8F4F0;
+  border-radius: 999px;
+
+}
+
+.budgets-components-r1 {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+
+.budgets-transaction-line2 {
+  margin-top: 20px;
+  width: 504px;
+  height: 40px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  align-items: center;
+}
+
+.budgets-transaction-line2 .section1 {
+  display: flex;
+  gap: 16px;
+  width: px;
+  height: 32px;
+  align-items: center;
+
+
+}
+
+.budgets-transaction-line2 .section1 .dp {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+
+}
+
+
+
+.budgets-transaction-line2 .section2 {
+  /* background-color: blue; */
+  text-align: end;
+}
