@@ -98,7 +98,7 @@
 
 .sidebar {
   width: 300px;
-  height: 100vh;
+  height: 1135px;
   position: sticky;
   display: flex;
   flex-direction: column;
@@ -330,12 +330,54 @@
 .overview-display-pot-row-2 .overview-display-pot-row-2-secound-half {
   width: 247px;
   height: 110px;
-  background-color: rgb(219, 161, 15);
+  background-color: ;
   display: flex;
   gap: 20px;
   align-items: center;
   border-radius: 20px;
   padding: 20px;
+}
+
+.pot-savings-lable {
+  position: relative;
+  width: 130px;
+  height: 43px;
+  background-color: 0;
+  border-radius: 6px;
+  padding-left: 16px;
+  margin-bottom: 16px;
+
+}
+
+.pot-savings-lable::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: px;
+  width: 4px;
+  height: 43px;
+  background-color: #277C78;
+  border-radius: 999px;
+}
+
+.pot-gift {
+  position: relative;
+  width: 130px;
+  height: 43px;
+  background-color: 0;
+  border-radius: 6px;
+  padding-left: 16px;
+}
+
+.pot-gift::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: px;
+  width: 4px;
+  height: 43px;
+  background-color: #82C9D7;
+  border-radius: 999px;
 }
 
 
@@ -344,6 +386,70 @@
   height: 761px;
   background-color: transparent;
   border-radius: 20px;
+
+}
+
+/* .pot-Concert-lable {
+  position: relative;
+  width: 130px;
+  height: 43px;
+  background-color: 0;
+  border-radius: 6px;
+  padding-left: 16px;
+}
+
+.pot-Concert-lable::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: px;
+  width: 4px;
+  height: 43px;
+  background-color: #277C78;
+  border-radius: 999px;
+} */
+
+.pot-Concert {
+  position: relative;
+  width: 130px;
+  height: 43px;
+  background-color: 0;
+  border-radius: 6px;
+  padding-left: 16px;
+
+
+}
+
+.pot-Concert::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: px;
+  width: 4px;
+  height: 43px;
+  background-color: #626070;
+  border-radius: 999px;
+}
+
+.pot-Laptop {
+  position: relative;
+  width: 130px;
+  height: 43px;
+  background-color: 0;
+  border-radius: 6px;
+  padding-left: 16px;
+  margin-top: 16px;
+}
+
+.pot-Laptop::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: px;
+  width: 4px;
+  height: 43px;
+  background-color: #F2CDAC;
+  border-radius: 999px;
 }
 
 .overview-display-pot {
@@ -447,6 +553,8 @@
   padding: 24px;
   border-radius: 20px;
   background-color: white;
+  padding: 32px;
+
 
 }
 
@@ -476,28 +584,51 @@
   width: 365px;
   height: 61px;
   display: flex;
-  grid-column: auto;
-  gap: 250px;
-  background-color: 0;
+  justify-content: space-between;
+
+
+  background-color: #F8F4F0;
+  border-radius: 15px;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 12px;
+  background-color: #f5f5f5;
+  border-left: 4px solid #277C78;
+  border-radius: 6px;
+
+
 }
 
 .overview-c2 .overview-recurring-bill .overview-recurring-bill-list .total-upcoming {
   width: 365px;
   height: 61px;
   display: flex;
-  grid-column: auto;
-  gap: 200px;
-  padding: 0;
-  background-color: 0;
+  justify-content: space-between;
+
+  background-color: #F8F4F0;
+  border-radius: 15px;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 12px;
+  background-color: #f5f5f5;
+  border-left: 4px solid #F2CDAC;
+  border-radius: 6px;
 }
 
 .overview-c2 .overview-recurring-bill .overview-recurring-bill-list .due-soon {
   width: 365px;
   height: 61px;
   display: flex;
-  grid-column: auto;
-  gap: 250px;
-  background-color: 0;
+  justify-content: space-between;
+
+  background-color: #F8F4F0;
+  border-radius: 15px;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 12px;
+  background-color: #f5f5f5;
+  border-left: 4px solid #82C9D7;
+  border-radius: 6px;
 }
 
 
@@ -1049,6 +1180,13 @@
 
 }
 
+.Dropdown-edit-delete-budget {
+  width: 134px;
+  height: 91px;
+  padding: 12px 20px 12px 20px;
+
+}
+
 .budgets-components-r1 {
 
   margin-bottom: 20px;
@@ -1194,4 +1332,129 @@
 .budgets-transaction-line2 .section2 {
   /* background-color: blue; */
   text-align: end;
+}
+
+
+
+/*---------------------------------------------------------------------------------
+/* =========================
+    Components 
+  ========================= */
+
+.add-budget {
+  width: 560px;
+  height: 490px;
+  background-color: ;
+  padding: 32px;
+  border-radius: 20px;
+
+
+
+}
+
+.add-budget {
+  width: 560px;
+  height: 490px;
+  background-color: white;
+  padding: 32px;
+  border-radius: 20px;
+
+
+
+}
+
+.title-control {
+  width: 496px;
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+
+.cancel-add {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+}
+
+.Description {
+  margin-bottom: 20px;
+}
+
+.budget-form {
+  width: 496px;
+  height: 233px;
+  background-color: 0;
+  margin-bottom: 20px;
+
+
+}
+
+.dropdown {
+  width: 496px;
+  height: 45px;
+  border-radius: 10px;
+  align-items: center;
+
+
+}
+
+.amount-box {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.add-amount {
+  width: 496px;
+  height: 45px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+.submit-button {
+  width: 496px;
+  height: 53px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+
+
+
+.deleted-budget {
+  width: 560px;
+  height: 278px;
+  background-color: white;
+  padding: 32px;
+  border-radius: 20px;
+}
+
+.decision-buttons {
+  width: 496px;
+  height: 94px;
+  margin-top: 20px;
+}
+
+.deletedbuttons {
+  width: 496px;
+  height: 53px;
+  background-color: #C94736;
+  color: white;
+  border-radius: 10px;
+  border: 0;
+  margin-bottom: 20px;
+
+}
+
+.goback-buttons {
+  width: 496px;
+  height: 21px;
+  background-color: transparent;
+  border: 0;
 }

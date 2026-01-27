@@ -24,12 +24,19 @@ function Transactions() {
         <div className="transaction-controls">
 
 
-          <div>
+          <div className="search-wrapper">
             <input
               type="text"
               placeholder="Search transactions"
               className="transaction-search"
             />
+            <img
+              src="/assets/images/icon-search.svg"
+              alt="search"
+              className="search-icon"
+            />
+
+
           </div>
 
           <div className='transaction-controls-dropdown text-preset-4'>Sort by

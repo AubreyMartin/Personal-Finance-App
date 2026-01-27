@@ -1,19 +1,31 @@
+import { useNavigate } from "react-router-dom";
+import { usePotsInfo } from "../hooks/usePotsInfo"
+
 function Pots() {
+
+  const potsInfo = usePotsInfo()
+  const Navigate = useNavigate()
+
+
+
   return (
+
+
+
     <div className="page-pots">
 
 
 
       <div className="pot-T-B">
         <h1>Pots</h1>
-        <button className="pot-add-button">+ Add New Pot</button>
+        <button className="pot-add-button" onClick={() => { Navigate("/AddNewPot") }}>+ Add New Pot</button>
       </div>
 
       <div className="pots-components">
         <div className="pots-components-savings">
           <div className="pots-components-template" >
             <div className="pots-components-r1">
-              <div className="title-test-preset-2">Saving</div>
+              <div className="title-test-preset-2">{potsInfo.pots[0]?.name}</div>
               <button className="controls-dots-button"><img src="public/assets/images/icon-ellipsis.svg" alt="" /></button>
             </div>
 
@@ -21,8 +33,13 @@ function Pots() {
             <div className="pots-components-progress-bar">
               <div className="pots-components-progress-bar-details">
                 <div className=' text-preset-4'>Total Saved </div>
-                <div className=' text-preset-1'>$159.00 </div>
+                <div className=' text-preset-1'>{new Intl.NumberFormat('en-US', {
+                  style: 'currency',
+                  currency: 'USD'
+                }).format(potsInfo.pots[0]?.total)} </div>
               </div>
+
+
               <div>
                 Bar
               </div>

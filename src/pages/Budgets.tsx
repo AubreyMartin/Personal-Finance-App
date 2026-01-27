@@ -1,8 +1,16 @@
 import { useEffect, useState } from 'react';
 import type { Transaction } from '../types';
+import { useNavigate } from "react-router-dom";
+
 
 function Budgets() {
   const [data, setData] = useState<Transaction[]>([]);
+  const Navigate = useNavigate()
+
+  const handleChange = (e) => {
+    const value = e.target.value;
+    if (value) navigate(value);
+  };
 
   useEffect(() => {
     fetch('/data.json')
@@ -14,6 +22,11 @@ function Budgets() {
         console.error('Failed to load transactions data', error);
       });
   }, []);
+
+
+
+
+
   return (
     <div className="page budgets">
 
@@ -21,7 +34,10 @@ function Budgets() {
 
       <div className="pot-T-B">
         <h1>Budgets</h1>
-        <button className="pot-add-button">+ Add New Budget</button>
+        <button className="pot-add-button" onClick={() => { Navigate("/Addnewbudget") }}> + Add New Budget
+
+
+        </button>
       </div>
 
       <div className='budgets-components'>
@@ -55,7 +71,17 @@ function Budgets() {
 
               <div className="budgets-components-r1">
                 <div className="title text-preset-2-bold">Entertainment</div>
-                <button className="controls-dots-button"><img src="public/assets/images/icon-ellipsis.svg" alt="" /></button>
+                <button className="controls-dots-button"><img src="public/assets/images/icon-ellipsis.svg" alt="" />
+                  <div className="form-group">
+
+                    <select className="Dropdown-edit-delete-budget" >
+
+                      <option value="Edit Budget text-preset-4" onSelect={() => { Navigate("/Editbudget") }}>Edit Budget</option>
+                      <option value="Deleted Budget">Deleted Budget</option>
+
+                    </select>
+                  </div>
+                </button>
               </div>
 
 

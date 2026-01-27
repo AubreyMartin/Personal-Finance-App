@@ -7,6 +7,13 @@ import Recurring from "./pages/RecurringBills";
 import Login from "./pages/login";
 import Layout from "./components/Layout";
 import "./app.css";
+import AddNewBudget from "./components/AddNewBudget";
+import Editbudget from "./components/Editbudget";
+import DeletedBudget from "./components/DeletedBudget";
+import AddNewPot from "./components/AddNewPot";
+import EditPot from "./components/EditPot";
+import DeletePot from "./components/DeletePot";
+
 
 function App() {
   return (
@@ -45,6 +52,7 @@ function App() {
             </Layout>
           }
         />
+
         <Route
           path="/recurring"
           element={
@@ -52,9 +60,67 @@ function App() {
               <Recurring />
             </Layout>
           }
+        /> <Route
+          path="/AddNewBudget"
+          element={
+            <Layout>
+              <AddNewBudget />
+            </Layout>
+          }
         />
+
+        <Route
+          path="/Editbudget"
+          element={
+            <Layout>
+              <Editbudget />
+            </Layout>
+          }
+        />
+
+        <Route
+          path="/DeletedBudget"
+          element={
+            <Layout>
+              <DeletedBudget />
+            </Layout>
+          }
+        />
+
+        <Route
+          path="/AddNewPot"
+          element={
+            <Layout>
+              <AddNewPot />
+            </Layout>
+          }
+        />
+        <Route
+          path="/EditPot"
+          element={
+            <Layout>
+              <EditPot />
+            </Layout>
+          }
+        />
+
+        <Route
+          path="/DeletePot"
+          element={
+            <Layout>
+              <DeletePot />
+            </Layout>
+          }
+        />
+
+
+
+
       </Routes>
-    </BrowserRouter>
+
+
+
+    </BrowserRouter >
   );
 }
 

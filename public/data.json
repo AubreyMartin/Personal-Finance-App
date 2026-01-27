@@ -1,9 +1,12 @@
 {
     "balance": {
-        "current": 4836.00,
+        "current": 4836.11,
         "income": 3814.25,
         "expenses": 1700.50
     },
+
+
+
     "transactions": [
         {
             "avatar": "./assets/images/avatars/emma-richardson.jpg",
