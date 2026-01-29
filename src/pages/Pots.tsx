@@ -94,7 +94,6 @@ function Pots() {
 
         { /* =========================Gift  ========================= */}
 
-
         <div className="pots-components-gift">
           <div className="pots-components-savings">
             <div className="pots-components-template" >

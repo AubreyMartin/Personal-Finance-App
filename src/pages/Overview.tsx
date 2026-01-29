@@ -91,7 +91,7 @@ function Overview() {
                     <p className="pot-total-amount text-preset-1 ">{new Intl.NumberFormat('en-US', {
                       style: 'currency',
                       currency: 'USD'
-                    }).format(potsInfo.totalsaved)}</p>
+                    }).format(potsInfo.totalSaved)}</p>
                   </div>
                 </div>
 

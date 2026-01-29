@@ -7,7 +7,7 @@ import Recurring from "./pages/RecurringBills";
 import Login from "./pages/login";
 import Layout from "./components/Layout";
 import "./app.css";
-import AddNewBudget from "./components/AddNewBudget";
+import AddNewBudget from "./components/Addnewbudget";
 import Editbudget from "./components/Editbudget";
 import DeletedBudget from "./components/DeletedBudget";
 import AddNewPot from "./components/AddNewPot";
