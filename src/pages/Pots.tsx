@@ -26,7 +26,7 @@ function Pots() {
           <div className="pots-components-template" >
             <div className="pots-components-r1">
               <div className="title-test-preset-2">{potsInfo.pots[0]?.name}</div>
-              <button className="controls-dots-button"><img src="public/assets/images/icon-ellipsis.svg" alt="" /></button>
+              <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" /></button>
             </div>
 
 
@@ -65,7 +65,7 @@ function Pots() {
             <div className="pots-components-template" >
               <div className="pots-components-r1">
                 <div className="title-test-preset-2">Concert Ticket</div>
-                <button className="controls-dots-button"><img src="public/assets/images/icon-ellipsis.svg" alt="" /></button>
+                <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" /></button>
               </div>
 
 
@@ -99,7 +99,7 @@ function Pots() {
             <div className="pots-components-template" >
               <div className="pots-components-r1">
                 <div className="title-test-preset-2">Gift</div>
-                <button className="controls-dots-button"><img src="public/assets/images/icon-ellipsis.svg" alt="" /></button>
+                <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" /></button>
               </div>
 
 
@@ -138,7 +138,7 @@ function Pots() {
             <div className="pots-components-template" >
               <div className="pots-components-r1">
                 <div className="title-test-preset-2">New Laptop</div>
-                <button className="controls-dots-button"><img src="public/assets/images/icon-ellipsis.svg" alt="" /></button>
+                <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" /></button>
               </div>
 
 
@@ -173,7 +173,7 @@ function Pots() {
             <div className="pots-components-template" >
               <div className="pots-components-r1">
                 <div className="title-test-preset-2">Holiday</div>
-                <button className="controls-dots-button"><img src="public/assets/images/icon-ellipsis.svg" alt="" /></button>
+                <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" /></button>
               </div>
 
 

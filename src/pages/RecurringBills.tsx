@@ -23,7 +23,7 @@ function Recurring() {
 
         <div className="total-summary">
           <div className="page-recurring-totalbills">
-            <div className="page-recurring-totalbills-icon">  <img src="public/assets/images/icon-recurring-bills.svg" alt="" />
+            <div className="page-recurring-totalbills-icon">  <img src="/assets/images/icon-recurring-bills.svg" alt="" />
             </div>
             <div>
               <h3 className=' text-preset-4'>Total Bills</h3>

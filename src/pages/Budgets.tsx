@@ -66,7 +66,7 @@ function Budgets() {
 
               <div className="budgets-components-r1">
                 <div className="title text-preset-2-bold">Entertainment</div>
-                <button className="controls-dots-button"><img src="public/assets/images/icon-ellipsis.svg" alt="" />
+                <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" />
                   <div className="form-group">
 
                     <select className="Dropdown-edit-delete-budget" >
@@ -104,7 +104,7 @@ function Budgets() {
                 <div className="budgets-component-pot-row1">
                   <div className=' text-preset-3'>Latest Spending </div>
                   <button className="see-details text-preset-4">See All
-                    <img src="public/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
+                    <img src="/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
                   </button>
                 </div>
 
@@ -134,7 +134,7 @@ function Budgets() {
 
               <div className="budgets-components-r1">
                 <div className="title text-preset-2-bold">Bills</div>
-                <button className="controls-dots-button"><img src="public/assets/images/icon-ellipsis.svg" alt="" /></button>
+                <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" /></button>
               </div>
 
 
@@ -162,7 +162,7 @@ function Budgets() {
                 <div className="budgets-component-pot-row1">
                   <div className=' text-preset-3'>Latest Spending </div>
                   <button className="see-details text-preset-4">See All
-                    <img src="public/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
+                    <img src="/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
                   </button>
                 </div>
 
@@ -192,7 +192,7 @@ function Budgets() {
 
               <div className="budgets-components-r1">
                 <div className="title text-preset-2-bold">Dining Out</div>
-                <button className="controls-dots-button"><img src="public/assets/images/icon-ellipsis.svg" alt="" /></button>
+                <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" /></button>
               </div>
 
 
@@ -220,7 +220,7 @@ function Budgets() {
                 <div className="budgets-component-pot-row1">
                   <div className=' text-preset-3'>Latest Spending </div>
                   <button className="see-details text-preset-4">See All
-                    <img src="public/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
+                    <img src="/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
                   </button>
                 </div>
 
@@ -251,7 +251,7 @@ function Budgets() {
 
               <div className="budgets-components-r1">
                 <div className="title text-preset-2-bold">Personal Care</div>
-                <button className="controls-dots-button"><img src="public/assets/images/icon-ellipsis.svg" alt="" /></button>
+                <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" /></button>
               </div>
 
 
@@ -279,7 +279,7 @@ function Budgets() {
                 <div className="budgets-component-pot-row1">
                   <div className=' text-preset-3'>Latest Spending </div>
                   <button className="see-details text-preset-4">See All
-                    <img src="public/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
+                    <img src="/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
                   </button>
                 </div>
 

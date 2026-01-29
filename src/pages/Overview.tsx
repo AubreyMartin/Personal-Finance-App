@@ -77,7 +77,7 @@ function Overview() {
                 <div className=' text-preset-2'>Pots</div>
 
                 <button className="see-details text-preset-4" onClick={() => { Navigate("/Pots") }}>See Details
-                  <img src="public/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
+                  <img src="/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
                 </button>
 
               </div>
@@ -85,7 +85,7 @@ function Overview() {
               <div className="overview-display-pot-row-2">
                 <div className="pot-total-saved">
                   <div className="pot-total-saved-logo">
-                    <img src="starter-code/assets/images/icon-pot.svg" alt=" pot-logo" />
+                    <img src="/assets/images/icon-pot.svg" alt=" pot-logo" />
                   </div>
 
                   <div className="pot-total-saved-text">
@@ -141,7 +141,7 @@ function Overview() {
                 <div className="overview-transaction-line1">
                   <p className=" text-preset-2"> Transaction </p>
                   <button className="view-all text-preset-4" onClick={() => { Navigate("/transactions") }}>View All
-                    <img src="public/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
+                    <img src="/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
                   </button>
                 </div>
 
@@ -189,7 +189,7 @@ function Overview() {
 
 
                 <button className="see-details" onClick={() => { Navigate("/budgets") }}>See Details
-                  <img src="public/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
+                  <img src="/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
                 </button>
               </div>
             </div>
@@ -198,7 +198,7 @@ function Overview() {
               <div className="overview-recurring-bill-row1">
                 <h3>Recurring Bills</h3>
                 <button className="see-details" onClick={() => { Navigate("/recurring") }}> See Details
-                  <img src="public/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
+                  <img src="/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
                 </button>
               </div>
 
