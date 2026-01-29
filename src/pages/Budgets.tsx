@@ -5,12 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 function Budgets() {
   const [data, setData] = useState<Transaction[]>([]);
-  const Navigate = useNavigate()
-
-  const handleChange = (e) => {
-    const value = e.target.value;
-    if (value) navigate(value);
-  };
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch('/data.json')
@@ -34,7 +29,7 @@ function Budgets() {
 
       <div className="pot-T-B">
         <h1>Budgets</h1>
-        <button className="pot-add-button" onClick={() => { Navigate("/Addnewbudget") }}> + Add New Budget
+        <button className="pot-add-button" onClick={() => { navigate("/Addnewbudget") }}> + Add New Budget
 
 
         </button>
@@ -76,7 +71,7 @@ function Budgets() {
 
                     <select className="Dropdown-edit-delete-budget" >
 
-                      <option value="Edit Budget text-preset-4" onSelect={() => { Navigate("/Editbudget") }}>Edit Budget</option>
+                      <option value="Edit Budget text-preset-4" onSelect={() => { navigate("/Editbudget") }}>Edit Budget</option>
                       <option value="Deleted Budget">Deleted Budget</option>
 
                     </select>

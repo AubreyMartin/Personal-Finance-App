@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
-import type { Transaction, Balance, } from '../types';
-import { Link, useNavigate } from "react-router-dom";
+import type { Transaction, Balance } from '../types';
+import { useNavigate } from "react-router-dom";
 import { usePotsInfo } from "../hooks/usePotsInfo"
 
 
 
 function Overview() {
 
-  const [balance, setBalance] = useState<Balance>({});
+  const [balance, setBalance] = useState<Balance>({ current: 0, income: 0, expenses: 0 });
 
   const [data, setData] = useState<Transaction[]>([]);
 
@@ -18,9 +18,11 @@ function Overview() {
   useEffect(() => {
     fetch('/data.json')
       .then((res) => res.json())
-      .then((transationdata: { transactions: Transaction[] }) => {
+      .then((transationdata: { transactions: Transaction[]; balance?: Balance }) => {
         setData(transationdata.transactions.slice(0, 5));
-        setBalance(transationdata.balance)
+        if (transationdata.balance) {
+          setBalance(transationdata.balance);
+        }
       })
       .catch((error) => {
         console.error('Failed to load transactions data', error);
