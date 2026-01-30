@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import type { Transaction, Balance } from '../types';
 import { useNavigate } from "react-router-dom";
 import { usePotsInfo } from "../hooks/usePotsInfo"
+import PieChartOverview from "../components/PieChartOverview";
 
 
 
@@ -186,12 +187,13 @@ function Overview() {
             <div className="overview-budgets">
               <div className="overview-budgets-row1">
                 <h2>Budgets</h2>
-
-
                 <button className="see-details" onClick={() => { Navigate("/budgets") }}>See Details
                   <img src="/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
                 </button>
+
               </div>
+              <div><PieChartOverview /></div>
+
             </div>
 
             <div className="overview-recurring-bill">
@@ -200,6 +202,14 @@ function Overview() {
                 <button className="see-details" onClick={() => { Navigate("/recurring") }}> See Details
                   <img src="/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
                 </button>
+
+
+
+
+
+
+
+
               </div>
 
               <div className="overview-recurring-bill-list" >

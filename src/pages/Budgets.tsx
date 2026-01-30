@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { Transaction } from '../types';
 import { useNavigate } from "react-router-dom";
+import PieChart from "../components/PieChart";
 
 
 function Budgets() {
@@ -42,22 +43,10 @@ function Budgets() {
 
         <div className='budgets-component-graph'>
           <div className='budgets-component-fig'>
-            Graph
+            <PieChart />
           </div>
 
-          <p className='text-preset-2'>Spending Summary</p>
-          <div>
-            Entertainment
-          </div>
-          <div>
-            Bills
-          </div>
-          <div>
-            Dinning Out
-          </div>
-          <div>
-            Personal care
-          </div>
+
         </div>
 
         <div>

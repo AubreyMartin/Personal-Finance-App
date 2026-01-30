@@ -1,0 +1,88 @@
+/* PieChartOverview – chart left, label+limit boxes right, inside yellow box */
+
+.pie-chart-overview {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  /* background-color: yellow; */
+  border-radius: 12px;
+  width: 364px;
+  height: 302px;
+  box-sizing: border-box;
+}
+
+.pie-chart-overview__chart-wrap {
+  position: relative;
+  flex-shrink: 0;
+  width: 260px;
+  height: 260px;
+}
+
+.chart__center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.chart__center-total {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.chart__center-limit {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.pie-chart-overview__svg {
+  display: block;
+  width: 260px;
+  height: 260px;
+
+}
+
+.pie-chart-overview__segment {
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.pie-chart-overview__legend {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* background-color: brown; */
+
+}
+
+.pie-chart-overview__box {
+  width: 101px;
+  height: 43px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 0px 0px 16px;
+  box-sizing: ;
+  background: #fff;
+  border-radius: 8px;
+
+}
+
+.pie-chart-overview__label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.2;
+}
+
+.pie-chart-overview__limit {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111;
+  margin-top: 2px;
+}

@@ -13,7 +13,9 @@ import DeletedBudget from "./components/DeletedBudget";
 import AddNewPot from "./components/AddNewPot";
 import EditPot from "./components/EditPot";
 import DeletePot from "./components/DeletePot";
+import PieChart from "./components/PieChart";
 
+import PieChartOverviwe from "./components/PieChartOverview";
 
 function App() {
   return (
@@ -113,16 +115,22 @@ function App() {
           }
         />
 
-        {/* <Route
+        <Route
           path="/PieChart"
           element={
             <Layout>
-              <PieChart
-              />
+              <PieChart />
             </Layout>
           }
-        /> */}
-
+        />
+        <Route
+          path="/PieChartOverviwe"
+          element={
+            <Layout>
+              <PieChartOverviwe />
+            </Layout>
+          }
+        />
 
 
 

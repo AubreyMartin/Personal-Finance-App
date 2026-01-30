@@ -1,0 +1,90 @@
+/* PieChart / Spending Summary */
+
+.pie-chart {
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+  max-width: 400px;
+}
+
+.pie-chart__chart-wrap {
+  position: relative;
+  height: 260px;
+  /* background-color: red; */
+  justify-items: center;
+
+
+}
+
+.pie-chart__svg {
+  display: block;
+  width: 260px;
+  height: 260px;
+}
+
+.pie-chart__center {
+
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  /* background-color: yellow; */
+  margin-top:
+    -150px;
+
+
+}
+
+.pie-chart__total {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.pie-chart__limit {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.pie-chart__title {
+  font-size: 1.25rem;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.pie-chart__legend {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pie-chart__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pie-chart__label-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pie-chart__swatch {
+  width: 6px;
+  height: 24px;
+  border-radius: 4px;
+  /* color set inline from data */
+}
+
+.pie-chart__amount {
+  font-weight: 600;
+}
+
+.pie-chart__amount-sub {
+  color: #666;
+  font-weight: 400;
+}
+
+.pie-chart__segment {
+  stroke: #fff;
+  stroke-width: 2;
+}
