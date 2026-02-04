@@ -10,17 +10,17 @@ export default function DeletedBudget() {
 
             <div className="title-control">
                 <h1 className=" text-preset-1">Delete ‘Entertainment’?</h1>
-                <button className="cancel-add" onClick={() => { Navigate("/Budgets") }}>X</button>
+                <button className="cancel-add" onClick={() => Navigate("/budgets")}>X</button>
             </div>
             <p className="text-preset-4">
                 Are you sure you want to delete this budget? This action cannot be reversed, and all the data inside it will be removed forever.</p>
 
             <div className="decision-buttons">
-                <button type="submit" className="deletedbuttons  text-preset-4-bold">
+                <button type="button" className="deletedbuttons  text-preset-4-bold" onClick={() => Navigate("/budgets")}>
                     Yes, Confirm Deletion
                 </button>
 
-                <button type="submit" className="goback-buttons  text-preset-4">
+                <button type="button" className="goback-buttons  text-preset-4" onClick={() => Navigate("/budgets")}>
                     No, Go Back
                 </button></div>
 

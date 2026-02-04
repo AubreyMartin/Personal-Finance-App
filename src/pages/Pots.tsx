@@ -1,20 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import { usePotsInfo } from "../hooks/usePotsInfo"
+import { BudgetActions } from "./BudgetActions";
 
 function Pots() {
-
   const potsInfo = usePotsInfo()
   const Navigate = useNavigate()
 
-
-
   return (
-
-
-
     <div className="page-pots">
-
-
 
       <div className="pot-T-B">
         <h1>Pots</h1>
@@ -22,12 +15,12 @@ function Pots() {
       </div>
 
       <div className="pots-components">
+
         <div className="pots-components-savings">
           <div className="pots-components-template" >
             <div className="pots-components-r1">
               <div className="title-test-preset-2">{potsInfo.pots[0]?.name}</div>
-              <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" /></button>
-            </div>
+              <BudgetActions />             </div>
 
 
             <div className="pots-components-progress-bar">
@@ -41,8 +34,9 @@ function Pots() {
 
 
               <div>
-                Bar
-              </div>
+                <div className="progress">
+                  <div className="progress-fill" />
+                </div>              </div>
               <div className="pots-components-progress-bar-details">
                 <div className=' text-preset-5-bold'>7.95%</div>
                 <div className=' text-preset-5'>Target of $2,000 </div>
@@ -65,8 +59,7 @@ function Pots() {
             <div className="pots-components-template" >
               <div className="pots-components-r1">
                 <div className="title-test-preset-2">Concert Ticket</div>
-                <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" /></button>
-              </div>
+                <BudgetActions />                  </div>
 
 
               <div className="pots-components-progress-bar">
@@ -75,8 +68,9 @@ function Pots() {
                   <div className=' text-preset-1'>$110.00 </div>
                 </div>
                 <div>
-                  Bar
-                </div>
+                  <div className="progress">
+                    <div className="progress-fill" />
+                  </div>                </div>
                 <div className="pots-components-progress-bar-details">
                   <div className=' text-preset-5-bold'>73.3%</div>
                   <div className=' text-preset-5'>Target of $150 </div>
@@ -99,8 +93,7 @@ function Pots() {
             <div className="pots-components-template" >
               <div className="pots-components-r1">
                 <div className="title-test-preset-2">Gift</div>
-                <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" /></button>
-              </div>
+                <BudgetActions />                  </div>
 
 
               <div className="pots-components-progress-bar">
@@ -109,7 +102,9 @@ function Pots() {
                   <div className=' text-preset-1'>$40.00 </div>
                 </div>
                 <div>
-                  Bar
+                  <div className="progress">
+                    <div className="progress-fill" />
+                  </div>
                 </div>
                 <div className="pots-components-progress-bar-details">
                   <div className=' text-preset-5-bold'>66.6%</div>
@@ -138,7 +133,7 @@ function Pots() {
             <div className="pots-components-template" >
               <div className="pots-components-r1">
                 <div className="title-test-preset-2">New Laptop</div>
-                <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" /></button>
+                <BudgetActions />
               </div>
 
 
@@ -148,7 +143,9 @@ function Pots() {
                   <div className=' text-preset-1'>$10.00 </div>
                 </div>
                 <div>
-                  Bar
+                  <div className="progress">
+                    <div className="progress-fill" />
+                  </div>
                 </div>
                 <div className="pots-components-progress-bar-details">
                   <div className=' text-preset-5-bold'>1.0%</div>
@@ -173,8 +170,7 @@ function Pots() {
             <div className="pots-components-template" >
               <div className="pots-components-r1">
                 <div className="title-test-preset-2">Holiday</div>
-                <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" /></button>
-              </div>
+                <BudgetActions />                  </div>
 
 
               <div className="pots-components-progress-bar">
@@ -183,7 +179,9 @@ function Pots() {
                   <div className=' text-preset-1'>$531.00 </div>
                 </div>
                 <div>
-                  Bar
+                  <div className="progress">
+                    <div className="progress-fill" />
+                  </div>
                 </div>
                 <div className="pots-components-progress-bar-details">
                   <div className=' text-preset-5-bold'>36.8%</div>
@@ -201,15 +199,6 @@ function Pots() {
         </div>
 
       </div>
-
-
-
-
-
-
-
-
-
 
 
     </div >

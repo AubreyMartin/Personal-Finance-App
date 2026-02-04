@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import type { Transaction } from '../types';
 import { useNavigate } from "react-router-dom";
 import PieChart from "../components/PieChart";
+import { BudgetActions } from "./BudgetActions";
 
 
 function Budgets() {
@@ -17,9 +18,8 @@ function Budgets() {
       .catch((error) => {
         console.error('Failed to load transactions data', error);
       });
-  }, []);
-
-
+  },
+    []);
 
 
 
@@ -30,7 +30,7 @@ function Budgets() {
 
       <div className="pot-T-B">
         <h1>Budgets</h1>
-        <button className="pot-add-button" onClick={() => { navigate("/Addnewbudget") }}> + Add New Budget
+        <button className="pot-add-button" onClick={() => { navigate("/AddNewBudget") }}> + Add New Budget
 
 
         </button>
@@ -55,17 +55,10 @@ function Budgets() {
 
               <div className="budgets-components-r1">
                 <div className="title text-preset-2-bold">Entertainment</div>
-                <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" />
-                  <div className="form-group">
 
-                    <select className="Dropdown-edit-delete-budget" >
 
-                      <option value="Edit Budget text-preset-4" onSelect={() => { navigate("/Editbudget") }}>Edit Budget</option>
-                      <option value="Deleted Budget">Deleted Budget</option>
+                <BudgetActions />
 
-                    </select>
-                  </div>
-                </button>
               </div>
 
 
@@ -123,7 +116,7 @@ function Budgets() {
 
               <div className="budgets-components-r1">
                 <div className="title text-preset-2-bold">Bills</div>
-                <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" /></button>
+                <BudgetActions />
               </div>
 
 
@@ -181,8 +174,7 @@ function Budgets() {
 
               <div className="budgets-components-r1">
                 <div className="title text-preset-2-bold">Dining Out</div>
-                <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" /></button>
-              </div>
+                <BudgetActions />              </div>
 
 
               <div className="budgets-components-progress-bar">
@@ -240,8 +232,7 @@ function Budgets() {
 
               <div className="budgets-components-r1">
                 <div className="title text-preset-2-bold">Personal Care</div>
-                <button className="controls-dots-button"><img src="/assets/images/icon-ellipsis.svg" alt="" /></button>
-              </div>
+                <BudgetActions />              </div>
 
 
               <div className="budgets-components-progress-bar">

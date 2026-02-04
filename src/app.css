@@ -1128,6 +1128,10 @@
 
 }
 
+.actions-wrapper {
+  position: relative;
+}
+
 .controls-dots-button {
   width: 16px;
   height: 16px;
@@ -1176,8 +1180,7 @@
   border-radius: 20px;
   padding: 32px;
   margin-bottom: 24px;
-
-
+  overflow: visible;
 }
 
 .Dropdown-edit-delete-budget {
@@ -1188,8 +1191,8 @@
 }
 
 .budgets-components-r1 {
-
   margin-bottom: 20px;
+  overflow: visible;
 }
 
 
@@ -1457,4 +1460,35 @@
   height: 21px;
   background-color: transparent;
   border: 0;
+}
+
+
+
+
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  width: 134px;
+  height: 91px;
+  padding: 8px 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  font-size: 14px;
+  z-index: 100;
+}
+
+.dropdown-menu li {
+  padding: 10px 0px 10px 20px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f8f4f0;
 }

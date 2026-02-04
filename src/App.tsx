@@ -8,13 +8,12 @@ import Login from "./pages/login";
 import Layout from "./components/Layout";
 import "./app.css";
 import AddNewBudget from "./components/AddNewBudget";
-import Editbudget from "./components/Editbudget";
-import DeletedBudget from "./components/DeletedBudget";
+import Editbudget from "./pages/Editbudget";
+import DeletedBudget from "./pages/DeletedBudget";
 import AddNewPot from "./components/AddNewPot";
 import EditPot from "./components/EditPot";
 import DeletePot from "./components/DeletePot";
 import PieChart from "./components/PieChart";
-
 import PieChartOverviwe from "./components/PieChartOverview";
 
 function App() {
@@ -131,9 +130,6 @@ function App() {
             </Layout>
           }
         />
-
-
-
       </Routes>
 
 
