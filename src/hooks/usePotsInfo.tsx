@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 
 type Pot = {
     name: string;
+    target: number;
     total: number;
+    theme: string;
 };
 
 export function usePotsInfo() {

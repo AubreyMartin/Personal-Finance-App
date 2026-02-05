@@ -16,192 +16,63 @@ function Pots() {
 
       <div className="pots-components">
 
-        <div className="pots-components-savings">
-          <div className="pots-components-template" >
-            <div className="pots-components-r1">
-              <div className="title-test-preset-2">{potsInfo.pots[0]?.name}</div>
-              <BudgetActions />             </div>
-
-
-            <div className="pots-components-progress-bar">
-              <div className="pots-components-progress-bar-details">
-                <div className=' text-preset-4'>Total Saved </div>
-                <div className=' text-preset-1'>{new Intl.NumberFormat('en-US', {
-                  style: 'currency',
-                  currency: 'USD'
-                }).format(potsInfo.pots[0]?.total)} </div>
-              </div>
-
-
-              <div>
-                <div className="progress">
-                  <div className="progress-fill" />
-                </div>              </div>
-              <div className="pots-components-progress-bar-details">
-                <div className=' text-preset-5-bold'>7.95%</div>
-                <div className=' text-preset-5'>Target of $2,000 </div>
-              </div>
-            </div>
-
-            <div className="pots-components-buttons">
-              <button className="pots-components-each-button ">+ Add Money</button>
-              <button className="pots-components-each-button ">Withdraw</button>
-            </div>
-
-          </div>
-        </div>
-
-
-        { /* =========================2nd ========================= */}
-        { /* =========================Concert Ticket ========================= */}
-        <div className="pots-components-gift">
-          <div className="pots-components-savings">
-            <div className="pots-components-template" >
+        {potsInfo.pots.map((pot, index) => {
+          const percent = pot.target > 0 ? Math.min(100, (pot.total / pot.target) * 100) : 0;
+          const isFirst = index === 0;
+          const template = (
+            <div className="pots-components-template">
               <div className="pots-components-r1">
-                <div className="title-test-preset-2">Concert Ticket</div>
-                <BudgetActions />                  </div>
-
-
-              <div className="pots-components-progress-bar">
-                <div className="pots-components-progress-bar-details">
-                  <div className=' text-preset-4'>Total Saved </div>
-                  <div className=' text-preset-1'>$110.00 </div>
-                </div>
-                <div>
-                  <div className="progress">
-                    <div className="progress-fill" />
-                  </div>                </div>
-                <div className="pots-components-progress-bar-details">
-                  <div className=' text-preset-5-bold'>73.3%</div>
-                  <div className=' text-preset-5'>Target of $150 </div>
-                </div>
-              </div>
-
-              <div className="pots-components-buttons">
-                <button className="pots-components-each-button ">+ Add Money</button>
-                <button className="pots-components-each-button ">Withdraw</button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        { /* =========================Gift  ========================= */}
-
-        <div className="pots-components-gift">
-          <div className="pots-components-savings">
-            <div className="pots-components-template" >
-              <div className="pots-components-r1">
-                <div className="title-test-preset-2">Gift</div>
-                <BudgetActions />                  </div>
-
-
-              <div className="pots-components-progress-bar">
-                <div className="pots-components-progress-bar-details">
-                  <div className=' text-preset-4'>Total Saved </div>
-                  <div className=' text-preset-1'>$40.00 </div>
-                </div>
-                <div>
-                  <div className="progress">
-                    <div className="progress-fill" />
-                  </div>
-                </div>
-                <div className="pots-components-progress-bar-details">
-                  <div className=' text-preset-5-bold'>66.6%</div>
-                  <div className=' text-preset-5'>Target of $60 </div>
-                </div>
-              </div>
-
-              <div className="pots-components-buttons">
-                <button className="pots-components-each-button ">+ Add Money</button>
-                <button className="pots-components-each-button ">Withdraw</button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-        { /* =========================New Laptop  ========================= */}
-
-
-        <div className="pots-components-gift">
-          <div className="pots-components-savings">
-            <div className="pots-components-template" >
-              <div className="pots-components-r1">
-                <div className="title-test-preset-2">New Laptop</div>
+                <div className="title-test-preset-2">{pot.name}</div>
                 <BudgetActions />
               </div>
 
-
               <div className="pots-components-progress-bar">
                 <div className="pots-components-progress-bar-details">
-                  <div className=' text-preset-4'>Total Saved </div>
-                  <div className=' text-preset-1'>$10.00 </div>
+                  <div className="text-preset-4">Total Saved</div>
+                  <div className="text-preset-1">
+                    {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(pot.total)}
+                  </div>
                 </div>
+
                 <div>
                   <div className="progress">
-                    <div className="progress-fill" />
+                    <div
+                      className="progress-fill"
+                      style={{ width: `${percent}%`, backgroundColor: pot.theme }}
+                    />
                   </div>
                 </div>
                 <div className="pots-components-progress-bar-details">
-                  <div className=' text-preset-5-bold'>1.0%</div>
-                  <div className=' text-preset-5'>Target of $1000 </div>
+                  <div className="text-preset-5-bold">{percent.toFixed(1)}%</div>
+                  <div className="text-preset-5">
+                    Target of {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(pot.target)}
+                  </div>
                 </div>
               </div>
 
               <div className="pots-components-buttons">
-                <button className="pots-components-each-button ">+ Add Money</button>
-                <button className="pots-components-each-button ">Withdraw</button>
+                <button className="pots-components-each-button">+ Add Money</button>
+                <button className="pots-components-each-button">Withdraw</button>
               </div>
-
             </div>
-          </div>
-        </div>
+          );
 
-
-        { /* =========================Holiday  ========================= */}
-
-        <div className="pots-components-gift">
-          <div className="pots-components-savings">
-            <div className="pots-components-template" >
-              <div className="pots-components-r1">
-                <div className="title-test-preset-2">Holiday</div>
-                <BudgetActions />                  </div>
-
-
-              <div className="pots-components-progress-bar">
-                <div className="pots-components-progress-bar-details">
-                  <div className=' text-preset-4'>Total Saved </div>
-                  <div className=' text-preset-1'>$531.00 </div>
-                </div>
-                <div>
-                  <div className="progress">
-                    <div className="progress-fill" />
-                  </div>
-                </div>
-                <div className="pots-components-progress-bar-details">
-                  <div className=' text-preset-5-bold'>36.8%</div>
-                  <div className=' text-preset-5'>Target of $1440 </div>
-                </div>
-              </div>
-
-              <div className="pots-components-buttons">
-                <button className="pots-components-each-button ">+ Add Money</button>
-                <button className="pots-components-each-button ">Withdraw</button>
-              </div>
-
+          return isFirst ? (
+            <div key={pot.name} className="pots-components-savings">
+              {template}
             </div>
-          </div>
-        </div>
+          ) : (
+            <div key={pot.name} className="pots-components-gift">
+              <div className="pots-components-savings">
+                {template}
+              </div>
+            </div>
+          );
+        })}
 
       </div>
 
-
-    </div >
+    </div>
   );
 }
 
