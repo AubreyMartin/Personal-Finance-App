@@ -9,7 +9,7 @@ import Layout from "./components/Layout";
 import "./app.css";
 import AddNewBudget from "./components/AddNewBudget";
 import Editbudget from "./pages/Editbudget";
-import DeletedBudget from "./pages/DeletedBudget";
+import Deleted from "./pages/Deleted";
 import AddNewPot from "./components/AddNewPot";
 import EditPot from "./components/EditPot";
 import DeletePot from "./components/DeletePot";
@@ -80,10 +80,10 @@ function App() {
         />
 
         <Route
-          path="/DeletedBudget"
+          path="/Deleted"
           element={
             <Layout>
-              <DeletedBudget />
+              <Deleted />
             </Layout>
           }
         />

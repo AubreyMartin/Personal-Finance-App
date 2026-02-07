@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { usePotsInfo } from "../hooks/usePotsInfo"
-import { BudgetActions } from "./BudgetActions";
+import { Actions } from "./Actions";
 
 function Pots() {
   const potsInfo = usePotsInfo()
@@ -23,7 +23,7 @@ function Pots() {
             <div className="pots-components-template">
               <div className="pots-components-r1">
                 <div className="title-test-preset-2">{pot.name}</div>
-                <BudgetActions />
+                <Actions name={pot.name} from={"/pots"} edit="/EditPot" />
               </div>
 
               <div className="pots-components-progress-bar">
@@ -51,7 +51,7 @@ function Pots() {
               </div>
 
               <div className="pots-components-buttons">
-                <button className="pots-components-each-button">+ Add Money</button>
+                <button className="pots-components-each-button">+Add Money</button>
                 <button className="pots-components-each-button">Withdraw</button>
               </div>
             </div>

@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export function BudgetActions() {
+export function Actions(props: { name: string, from: string, edit: string }) {
     const [open, setOpen] = useState<boolean>(false);
     const navigate = useNavigate();
+    const from = { "/pots": "Pot", "/budgets": "Budget" };
 
     return (
         <div className="actions-wrapper">
@@ -17,8 +18,10 @@ export function BudgetActions() {
 
             {open && (
                 <ul className="dropdown-menu">
-                    <li onClick={() => navigate("/Editbudget")}>Edit Budget</li>
-                    <li onClick={() => navigate("/DeletedBudget")}>Delete Budget</li>
+                    <li onClick={() => navigate(props?.edit)}>Edit {from[props?.from]}
+                    </li>
+                    <li onClick={() => navigate("/Deleted?name=" + props?.name + "&from=" + props?.from)}>Delete {from[props?.from]}
+                    </li>
                 </ul>
             )}
         </div>

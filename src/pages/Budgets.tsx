@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import type { Transaction } from '../types';
 import { useNavigate } from "react-router-dom";
 import PieChart from "../components/PieChart";
-import { BudgetActions } from "./BudgetActions";
+import { Actions } from "./Actions";
 
 
 function Budgets() {
@@ -57,7 +57,10 @@ function Budgets() {
                 <div className="title text-preset-2-bold">Entertainment</div>
 
 
-                <BudgetActions />
+                <Actions
+                  name="Entertainment"
+                  from="/budgets" edit="/EditBudget"
+                />
 
               </div>
 
@@ -116,7 +119,9 @@ function Budgets() {
 
               <div className="budgets-components-r1">
                 <div className="title text-preset-2-bold">Bills</div>
-                <BudgetActions />
+                <Actions
+                  name="Bills"
+                  from="/budgets" edit="/EditBudget" />
               </div>
 
 
@@ -174,7 +179,8 @@ function Budgets() {
 
               <div className="budgets-components-r1">
                 <div className="title text-preset-2-bold">Dining Out</div>
-                <BudgetActions />              </div>
+                <Actions name="DiningOut"
+                  from="/budgets" edit="/EditBudget" />              </div>
 
 
               <div className="budgets-components-progress-bar">
@@ -232,7 +238,9 @@ function Budgets() {
 
               <div className="budgets-components-r1">
                 <div className="title text-preset-2-bold">Personal Care</div>
-                <BudgetActions />              </div>
+                <Actions
+                  name="PersonalCare"
+                  from="/budgets" edit="/EditBudget" />              </div>
 
 
               <div className="budgets-components-progress-bar">

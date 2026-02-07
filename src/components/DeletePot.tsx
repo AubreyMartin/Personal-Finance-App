@@ -13,7 +13,7 @@ export default function DeletedPot() {
                 <button className="cancel-add" onClick={() => { Navigate("/Budgets") }}>X</button>
             </div>
             <p className="text-preset-4">
-                Are you sure you want to delete this budget? This action cannot be reversed, and all the data inside it will be removed forever.</p>
+                Are you sure you want to delete this pot? This action cannot be reversed, and all the data inside it will be removed forever.</p>
 
             <div className="decision-buttons">
                 <button type="submit" className="deletedbuttons  text-preset-4-bold">
