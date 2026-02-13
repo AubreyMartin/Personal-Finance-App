@@ -12,8 +12,6 @@
   height: 260px;
   /* background-color: red; */
   justify-items: center;
-
-
 }
 
 .pie-chart__svg {
@@ -23,15 +21,11 @@
 }
 
 .pie-chart__center {
-
   display: flex;
   flex-direction: column;
   justify-items: center;
   /* background-color: yellow; */
-  margin-top:
-    -150px;
-
-
+  margin-top: -150px;
 }
 
 .pie-chart__total {

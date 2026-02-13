@@ -1,7 +1,7 @@
 💰 Personal Finance App
 
-A modern personal finance dashboard built with React + TypeScript, 
-focused on real-world financial tracking: 
+A modern personal finance dashboard built with React + TypeScript,
+focused on real-world financial tracking:
 transactions, budgets, savings pots, and recurring bills.
 
 This project is based on a Frontend Mentor challenge and extended with scalable architecture, c
@@ -65,12 +65,12 @@ JWT Authentication
 
 🗂️ Project Structure
 src/
- ├─ app/            # Global store & types
- ├─ layout/         # App layout components
- ├─ pages/          # Feature pages
- ├─ components/     # Reusable UI components
- ├─ App.tsx
- └─ main.tsx
+├─ app/ # Global store & types
+├─ layout/ # App layout components
+├─ pages/ # Feature pages
+├─ components/ # Reusable UI components
+├─ App.tsx
+└─ main.tsx
 
 📌 Project Management
 
@@ -87,13 +87,17 @@ Scalable architecture decisions
 This repo is meant to demonstrate how I plan, structure, and ship production-ready frontend applications.
 
 🛠️ Setup & Run Locally
+
 # Clone repo
+
 git clone https://github.com/your-username/personal-finance-app.git
 
 # Install dependencies
+
 npm install
 
 # Start dev server
+
 npm run dev
 
 🧪 Current Status

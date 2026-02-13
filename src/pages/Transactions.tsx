@@ -30,9 +30,7 @@ function Transactions() {
     if (search.trim()) {
       const q = search.toLowerCase();
       result = result.filter(
-        (t) =>
-          t.name.toLowerCase().includes(q) ||
-          t.category.toLowerCase().includes(q)
+        (t) => t.name.toLowerCase().includes(q) || t.category.toLowerCase().includes(q),
       );
     }
 
@@ -79,10 +77,8 @@ function Transactions() {
       <h1>Transaction</h1>
 
       <div className="page-transactions">
-
         {/*=======Input field  page ======== */}
         <div className="transaction-controls">
-
           <div className="search-wrapper">
             <input
               type="text"
@@ -91,14 +87,11 @@ function Transactions() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
-            <img
-              src="/assets/images/icon-search.svg"
-              alt="search"
-              className="search-icon"
-            />
+            <img src="/assets/images/icon-search.svg" alt="search" className="search-icon" />
           </div>
 
-          <div className='transaction-controls-dropdown text-preset-4'>Sort by
+          <div className="transaction-controls-dropdown text-preset-4">
+            Sort by
             <div>
               <select
                 className="transaction-sort"
@@ -113,7 +106,6 @@ function Transactions() {
                 <option value="lowest">Lowest</option>
               </select>
             </div>
-
             Category
             <div>
               <select
@@ -131,21 +123,18 @@ function Transactions() {
           </div>
         </div>
 
-
         {/*=======Transaction description  ======== */}
 
-        <div className='transaction-description'>
-          <p className='transaction-name'>Recipient/Sender</p>
-          <div className='transaction-elements'>
-            <p className='transaction-elements-category text-preset-5'>Category</p>
-            <p className='transaction-elements-transactiondate text-preset-5' >Transaction Date</p>
-            <p className='transaction-elements-amount text-preset-5'>Amount</p>
+        <div className="transaction-description">
+          <p className="transaction-name">Recipient/Sender</p>
+          <div className="transaction-elements">
+            <p className="transaction-elements-category text-preset-5">Category</p>
+            <p className="transaction-elements-transactiondate text-preset-5">Transaction Date</p>
+            <p className="transaction-elements-amount text-preset-5">Amount</p>
           </div>
         </div>
 
-
         {/*=======Transaction Log  ======== */}
-
 
         <div className="transaction-log">
           {paginatedData.map((transaction) => (
@@ -159,34 +148,31 @@ function Transactions() {
               </div>
 
               <div className="cta text-preset-5 ">
-                <p className="cta-category text-preset-5">  {transaction.category}</p>
+                <p className="cta-category text-preset-5"> {transaction.category}</p>
                 <p className="cta-dates  text-preset-5">
-                  {new Date(transaction.date).toLocaleDateString('en-GB',
-                    {
-                      day: 'numeric',
-                      month: 'short',
-                      year: 'numeric',
-                    })}</p>
+                  {new Date(transaction.date).toLocaleDateString('en-GB', {
+                    day: 'numeric',
+                    month: 'short',
+                    year: 'numeric',
+                  })}
+                </p>
                 <p className="cta-amount text-preset-4-bold"> ${transaction.amount}</p>
               </div>
             </div>
           ))}
-
         </div>
 
-
-
         {/*=======Transaction footer  ======== */}
-        <div className='transaction-footer'>
-          <div className='transaction-footer-buttons'>
+        <div className="transaction-footer">
+          <div className="transaction-footer-buttons">
             <button
-              className='transaction-footer-buttons-pev'
+              className="transaction-footer-buttons-pev"
               onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
               disabled={currentPage === 1}
             >
               Prev
             </button>
-            <div className='transaction-footer-pages-1-4'>
+            <div className="transaction-footer-pages-1-4">
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                 <button
                   key={page}
@@ -198,7 +184,7 @@ function Transactions() {
               ))}
             </div>
             <button
-              className='transaction-footer-buttons-next'
+              className="transaction-footer-buttons-next"
               onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
               disabled={currentPage === totalPages}
             >
@@ -206,9 +192,8 @@ function Transactions() {
             </button>
           </div>
         </div>
-
       </div>
-    </div >
+    </div>
   );
 }
 

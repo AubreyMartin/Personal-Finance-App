@@ -1,9 +1,9 @@
-import { FinanceData } from '../types'
+import { FinanceData } from '../types';
 
 export async function loadFinanceData(): Promise<FinanceData> {
-  const response = await fetch('/data.json')
+  const response = await fetch('/data.json');
   if (!response.ok) {
-    throw new Error('Failed to load finance data')
+    throw new Error('Failed to load finance data');
   }
-  return response.json()
+  return response.json();
 }

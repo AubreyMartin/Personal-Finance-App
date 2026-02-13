@@ -1,20 +1,20 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Overview from "./pages/Overview";
-import Transactions from "./pages/Transactions";
-import Budgets from "./pages/Budgets";
-import Pots from "./pages/Pots";
-import Recurring from "./pages/RecurringBills";
-import Login from "./pages/login";
-import Layout from "./components/Layout";
-import "./app.css";
-import AddNewBudget from "./components/AddNewBudget";
-import Editbudget from "./pages/Editbudget";
-import Deleted from "./pages/Deleted";
-import AddNewPot from "./components/AddNewPot";
-import EditPot from "./components/EditPot";
-import DeletePot from "./components/DeletePot";
-import PieChart from "./components/PieChart";
-import PieChartOverviwe from "./components/PieChartOverview";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Overview from './pages/Overview';
+import Transactions from './pages/Transactions';
+import Budgets from './pages/Budgets';
+import Pots from './pages/Pots';
+import Recurring from './pages/RecurringBills';
+import Login from './pages/login';
+import Layout from './components/Layout';
+import './app.css';
+import AddNewBudget from './components/AddNewBudget';
+import Editbudget from './pages/Editbudget';
+import Deleted from './pages/Deleted';
+import AddNewPot from './components/AddNewPot';
+import EditPot from './components/EditPot';
+import DeletePot from './components/DeletePot';
+import PieChart from './components/PieChart';
+import PieChartOverviwe from './components/PieChartOverview';
 
 function App() {
   return (
@@ -53,7 +53,6 @@ function App() {
             </Layout>
           }
         />
-
         <Route
           path="/recurring"
           element={
@@ -61,7 +60,8 @@ function App() {
               <Recurring />
             </Layout>
           }
-        /> <Route
+        />{' '}
+        <Route
           path="/AddNewBudget"
           element={
             <Layout>
@@ -69,7 +69,6 @@ function App() {
             </Layout>
           }
         />
-
         <Route
           path="/Editbudget"
           element={
@@ -78,7 +77,6 @@ function App() {
             </Layout>
           }
         />
-
         <Route
           path="/Deleted"
           element={
@@ -87,7 +85,6 @@ function App() {
             </Layout>
           }
         />
-
         <Route
           path="/AddNewPot"
           element={
@@ -104,7 +101,6 @@ function App() {
             </Layout>
           }
         />
-
         <Route
           path="/DeletePot"
           element={
@@ -113,7 +109,6 @@ function App() {
             </Layout>
           }
         />
-
         <Route
           path="/PieChart"
           element={
@@ -131,10 +126,7 @@ function App() {
           }
         />
       </Routes>
-
-
-
-    </BrowserRouter >
+    </BrowserRouter>
   );
 }
 

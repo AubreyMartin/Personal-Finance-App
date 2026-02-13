@@ -3,29 +3,28 @@
 ========================= */
 
 @font-face {
-  font-family: "Public Sans";
-  src: url("/assets/fonts/PublicSans-VariableFont_wght.ttf") format("truetype");
+  font-family: 'Public Sans';
+  src: url('/assets/fonts/PublicSans-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Public Sans";
-  src: url("/assets/fonts/PublicSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-family: 'Public Sans';
+  src: url('/assets/fonts/PublicSans-Italic-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
 }
 
 :root {
-  font-family: "Public Sans", Inter, system-ui, Avenir, Helvetica, Arial,
-    sans-serif;
+  font-family: 'Public Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color: rgba(14, 14, 14, 0.87);
-  background-color: #F8F4F0;
+  background-color: #f8f4f0;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

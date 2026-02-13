@@ -1,6 +1,6 @@
 {
   "balance": {
-    "current": 4836.0,
+    "current": 4836.11,
     "income": 3814.25,
     "expenses": 1700.5
   },
@@ -11,7 +11,8 @@
       "category": "General",
       "date": "2024-08-19T14:23:11Z",
       "amount": 75.5,
-      "recurring": false
+      "recurring": false,
+      "id": "07ae"
     },
     {
       "avatar": "./assets/images/avatars/savory-bites-bistro.jpg",
@@ -19,7 +20,8 @@
       "category": "Dining Out",
       "date": "2024-08-19T20:23:11Z",
       "amount": -55.5,
-      "recurring": false
+      "recurring": false,
+      "id": "1f7f"
     },
     {
       "avatar": "./assets/images/avatars/daniel-carter.jpg",
@@ -27,23 +29,26 @@
       "category": "General",
       "date": "2024-08-18T09:45:32Z",
       "amount": -42.3,
-      "recurring": false
+      "recurring": false,
+      "id": "340c"
     },
     {
       "avatar": "./assets/images/avatars/sun-park.jpg",
       "name": "Sun Park",
       "category": "General",
       "date": "2024-08-17T16:12:05Z",
-      "amount": 120.0,
-      "recurring": false
+      "amount": 120,
+      "recurring": false,
+      "id": "b996"
     },
     {
       "avatar": "./assets/images/avatars/urban-services-hub.jpg",
       "name": "Urban Services Hub",
       "category": "General",
       "date": "2024-08-17T21:08:09Z",
-      "amount": -65.0,
-      "recurring": false
+      "amount": -65,
+      "recurring": false,
+      "id": "19de"
     },
     {
       "avatar": "./assets/images/avatars/liam-hughes.jpg",
@@ -51,15 +56,17 @@
       "category": "Groceries",
       "date": "2024-08-15T18:20:33Z",
       "amount": 65.75,
-      "recurring": false
+      "recurring": false,
+      "id": "e637"
     },
     {
       "avatar": "./assets/images/avatars/lily-ramirez.jpg",
       "name": "Lily Ramirez",
       "category": "General",
       "date": "2024-08-14T13:05:27Z",
-      "amount": 50.0,
-      "recurring": false
+      "amount": 50,
+      "recurring": false,
+      "id": "14ac"
     },
     {
       "avatar": "./assets/images/avatars/ethan-clark.jpg",
@@ -67,39 +74,44 @@
       "category": "Dining Out",
       "date": "2024-08-13T20:15:59Z",
       "amount": -32.5,
-      "recurring": false
+      "recurring": false,
+      "id": "3d8c"
     },
     {
       "avatar": "./assets/images/avatars/james-thompson.jpg",
       "name": "James Thompson",
       "category": "Entertainment",
       "date": "2024-08-11T15:45:38Z",
-      "amount": -5.0,
-      "recurring": false
+      "amount": -5,
+      "recurring": false,
+      "id": "9fde"
     },
     {
       "avatar": "./assets/images/avatars/pixel-playground.jpg",
       "name": "Pixel Playground",
       "category": "Entertainment",
       "date": "2024-08-11T18:45:38Z",
-      "amount": -10.0,
-      "recurring": true
+      "amount": -10,
+      "recurring": true,
+      "id": "070f"
     },
     {
       "avatar": "./assets/images/avatars/ella-phillips.jpg",
       "name": "Ella Phillips",
       "category": "Dining Out",
       "date": "2024-08-10T19:22:51Z",
-      "amount": -45.0,
-      "recurring": false
+      "amount": -45,
+      "recurring": false,
+      "id": "36ce"
     },
     {
       "avatar": "./assets/images/avatars/sofia-peterson.jpg",
       "name": "Sofia Peterson",
       "category": "Transportation",
       "date": "2024-08-08T08:55:17Z",
-      "amount": -15.0,
-      "recurring": false
+      "amount": -15,
+      "recurring": false,
+      "id": "6bce"
     },
     {
       "avatar": "./assets/images/avatars/mason-martinez.jpg",
@@ -107,7 +119,8 @@
       "category": "Lifestyle",
       "date": "2024-08-07T17:40:29Z",
       "amount": -35.25,
-      "recurring": false
+      "recurring": false,
+      "id": "5bb9"
     },
     {
       "avatar": "./assets/images/avatars/green-plate-eatery.jpg",
@@ -115,7 +128,8 @@
       "category": "Groceries",
       "date": "2024-08-06T08:25:44Z",
       "amount": -78.5,
-      "recurring": false
+      "recurring": false,
+      "id": "c4be"
     },
     {
       "avatar": "./assets/images/avatars/sebastian-cook.jpg",
@@ -123,47 +137,53 @@
       "category": "Transportation",
       "date": "2024-08-06T10:05:44Z",
       "amount": -22.5,
-      "recurring": false
+      "recurring": false,
+      "id": "a1fa"
     },
     {
       "avatar": "./assets/images/avatars/william-harris.jpg",
       "name": "William Harris",
       "category": "Personal Care",
       "date": "2024-08-05T14:30:56Z",
-      "amount": -10.0,
-      "recurring": false
+      "amount": -10,
+      "recurring": false,
+      "id": "4cbb"
     },
     {
       "avatar": "./assets/images/avatars/elevate-education.jpg",
       "name": "Elevate Education",
       "category": "Education",
       "date": "2024-08-04T11:15:22Z",
-      "amount": -50.0,
-      "recurring": true
+      "amount": -50,
+      "recurring": true,
+      "id": "5549"
     },
     {
       "avatar": "./assets/images/avatars/serenity-spa-and-wellness.jpg",
       "name": "Serenity Spa & Wellness",
       "category": "Personal Care",
       "date": "2024-08-03T14:00:37Z",
-      "amount": -30.0,
-      "recurring": true
+      "amount": -30,
+      "recurring": true,
+      "id": "2448"
     },
     {
       "avatar": "./assets/images/avatars/spark-electric-solutions.jpg",
       "name": "Spark Electric Solutions",
       "category": "Bills",
       "date": "2024-08-02T09:25:11Z",
-      "amount": -100.0,
-      "recurring": true
+      "amount": -100,
+      "recurring": true,
+      "id": "f70d"
     },
     {
       "avatar": "./assets/images/avatars/rina-sato.jpg",
       "name": "Rina Sato",
       "category": "Bills",
       "date": "2024-08-02T13:31:11Z",
-      "amount": -50.0,
-      "recurring": false
+      "amount": -50,
+      "recurring": false,
+      "id": "41f1"
     },
     {
       "avatar": "./assets/images/avatars/swift-ride-share.jpg",
@@ -171,23 +191,26 @@
       "category": "Transportation",
       "date": "2024-08-01T18:40:33Z",
       "amount": -18.75,
-      "recurring": false
+      "recurring": false,
+      "id": "2741"
     },
     {
       "avatar": "./assets/images/avatars/aqua-flow-utilities.jpg",
       "name": "Aqua Flow Utilities",
       "category": "Bills",
       "date": "2024-07-30T13:20:14Z",
-      "amount": -100.0,
-      "recurring": true
+      "amount": -100,
+      "recurring": true,
+      "id": "6cf2"
     },
     {
       "avatar": "./assets/images/avatars/ecofuel-energy.jpg",
       "name": "EcoFuel Energy",
       "category": "Bills",
       "date": "2024-07-29T11:55:29Z",
-      "amount": -35.0,
-      "recurring": true
+      "amount": -35,
+      "recurring": true,
+      "id": "3200"
     },
     {
       "avatar": "./assets/images/avatars/yuna-kim.jpg",
@@ -195,7 +218,8 @@
       "category": "Dining Out",
       "date": "2024-07-29T13:51:29Z",
       "amount": -28.5,
-      "recurring": false
+      "recurring": false,
+      "id": "29e1"
     },
     {
       "avatar": "./assets/images/avatars/flavor-fiesta.jpg",
@@ -203,7 +227,8 @@
       "category": "Dining Out",
       "date": "2024-07-27T20:15:06Z",
       "amount": -42.75,
-      "recurring": false
+      "recurring": false,
+      "id": "9964"
     },
     {
       "avatar": "./assets/images/avatars/harper-edwards.jpg",
@@ -211,15 +236,17 @@
       "category": "Shopping",
       "date": "2024-07-26T09:43:23Z",
       "amount": -89.99,
-      "recurring": false
+      "recurring": false,
+      "id": "b738"
     },
     {
       "avatar": "./assets/images/avatars/buzz-marketing-group.jpg",
       "name": "Buzz Marketing Group",
       "category": "General",
       "date": "2024-07-26T14:40:23Z",
-      "amount": 3358.0,
-      "recurring": false
+      "amount": 3358,
+      "recurring": false,
+      "id": "2d84"
     },
     {
       "avatar": "./assets/images/avatars/technova-innovations.jpg",
@@ -227,7 +254,8 @@
       "category": "Shopping",
       "date": "2024-07-25T16:25:37Z",
       "amount": -29.99,
-      "recurring": false
+      "recurring": false,
+      "id": "989e"
     },
     {
       "avatar": "./assets/images/avatars/bytewise.jpg",
@@ -235,7 +263,8 @@
       "category": "Lifestyle",
       "date": "2024-07-23T09:35:14Z",
       "amount": -49.99,
-      "recurring": true
+      "recurring": true,
+      "id": "c031"
     },
     {
       "avatar": "./assets/images/avatars/nimbus-data-storage.jpg",
@@ -243,23 +272,26 @@
       "category": "Bills",
       "date": "2024-07-21T10:05:42Z",
       "amount": -9.99,
-      "recurring": true
+      "recurring": true,
+      "id": "3655"
     },
     {
       "avatar": "./assets/images/avatars/emma-richardson.jpg",
       "name": "Emma Richardson",
       "category": "General",
       "date": "2024-07-20T17:30:55Z",
-      "amount": -25.0,
-      "recurring": false
+      "amount": -25,
+      "recurring": false,
+      "id": "daff"
     },
     {
       "avatar": "./assets/images/avatars/daniel-carter.jpg",
       "name": "Daniel Carter",
       "category": "General",
       "date": "2024-07-19T12:45:09Z",
-      "amount": 50.0,
-      "recurring": false
+      "amount": 50,
+      "recurring": false,
+      "id": "35bc"
     },
     {
       "avatar": "./assets/images/avatars/sun-park.jpg",
@@ -267,7 +299,8 @@
       "category": "General",
       "date": "2024-07-18T19:20:23Z",
       "amount": -38.5,
-      "recurring": false
+      "recurring": false,
+      "id": "657e"
     },
     {
       "avatar": "./assets/images/avatars/harper-edwards.jpg",
@@ -275,7 +308,8 @@
       "category": "Shopping",
       "date": "2024-07-17T14:55:37Z",
       "amount": -29.99,
-      "recurring": false
+      "recurring": false,
+      "id": "f4d9"
     },
     {
       "avatar": "./assets/images/avatars/liam-hughes.jpg",
@@ -283,15 +317,17 @@
       "category": "Groceries",
       "date": "2024-07-16T10:10:51Z",
       "amount": -52.75,
-      "recurring": false
+      "recurring": false,
+      "id": "bb5b"
     },
     {
       "avatar": "./assets/images/avatars/lily-ramirez.jpg",
       "name": "Lily Ramirez",
       "category": "General",
       "date": "2024-07-15T16:35:04Z",
-      "amount": 75.0,
-      "recurring": false
+      "amount": 75,
+      "recurring": false,
+      "id": "6f99"
     },
     {
       "avatar": "./assets/images/avatars/ethan-clark.jpg",
@@ -299,15 +335,17 @@
       "category": "Dining Out",
       "date": "2024-07-14T20:50:18Z",
       "amount": -41.25,
-      "recurring": false
+      "recurring": false,
+      "id": "cbc9"
     },
     {
       "avatar": "./assets/images/avatars/rina-sato.jpg",
       "name": "Rina Sato",
       "category": "Entertainment",
       "date": "2024-07-13T09:15:32Z",
-      "amount": -10.0,
-      "recurring": false
+      "amount": -10,
+      "recurring": false,
+      "id": "0fa7"
     },
     {
       "avatar": "./assets/images/avatars/james-thompson.jpg",
@@ -315,7 +353,8 @@
       "category": "Bills",
       "date": "2024-07-12T13:40:46Z",
       "amount": -95.5,
-      "recurring": false
+      "recurring": false,
+      "id": "af4d"
     },
     {
       "avatar": "./assets/images/avatars/ella-phillips.jpg",
@@ -323,7 +362,8 @@
       "category": "Dining Out",
       "date": "2024-07-11T18:05:59Z",
       "amount": -33.75,
-      "recurring": false
+      "recurring": false,
+      "id": "671b"
     },
     {
       "avatar": "./assets/images/avatars/yuna-kim.jpg",
@@ -331,7 +371,8 @@
       "category": "Dining Out",
       "date": "2024-07-10T12:30:13Z",
       "amount": -27.5,
-      "recurring": false
+      "recurring": false,
+      "id": "2d9e"
     },
     {
       "avatar": "./assets/images/avatars/sofia-peterson.jpg",
@@ -339,55 +380,62 @@
       "category": "Transportation",
       "date": "2024-07-09T08:55:27Z",
       "amount": -12.5,
-      "recurring": false
+      "recurring": false,
+      "id": "d0cd"
     },
     {
       "avatar": "./assets/images/avatars/mason-martinez.jpg",
       "name": "Mason Martinez",
       "category": "Lifestyle",
       "date": "2024-07-08T15:20:41Z",
-      "amount": -65.0,
-      "recurring": false
+      "amount": -65,
+      "recurring": false,
+      "id": "7287"
     },
     {
       "avatar": "./assets/images/avatars/sebastian-cook.jpg",
       "name": "Sebastian Cook",
       "category": "Transportation",
       "date": "2024-07-07T11:45:55Z",
-      "amount": -20.0,
-      "recurring": false
+      "amount": -20,
+      "recurring": false,
+      "id": "7fb6"
     },
     {
       "avatar": "./assets/images/avatars/william-harris.jpg",
       "name": "William Harris",
       "category": "General",
       "date": "2024-07-06T17:10:09Z",
-      "amount": 20.0,
-      "recurring": false
+      "amount": 20,
+      "recurring": false,
+      "id": "513c"
     },
     {
       "avatar": "./assets/images/avatars/elevate-education.jpg",
       "name": "Elevate Education",
       "category": "Education",
       "date": "2024-07-05T11:15:22Z",
-      "amount": -50.0,
-      "recurring": true
+      "amount": -50,
+      "recurring": true,
+      "id": "94bc"
     },
     {
       "avatar": "./assets/images/avatars/serenity-spa-and-wellness.jpg",
       "name": "Serenity Spa & Wellness",
       "category": "Personal Care",
       "date": "2024-07-03T14:00:37Z",
-      "amount": -30.0,
-      "recurring": true
+      "amount": -30,
+      "recurring": true,
+      "id": "a8c8"
     },
     {
       "avatar": "./assets/images/avatars/spark-electric-solutions.jpg",
       "name": "Spark Electric Solutions",
       "category": "Bills",
       "date": "2024-07-02T09:25:51Z",
-      "amount": -100.0,
-      "recurring": true
+      "amount": -100,
+      "recurring": true,
+      "id": "faf2"
     },
     {
       "avatar": "./assets/images/avatars/swift-ride-share.jpg",
@@ -395,61 +443,78 @@
       "category": "Transportation",
       "date": "2024-07-02T19:50:05Z",
       "amount": -16.5,
-      "recurring": false
+      "recurring": false,
+      "id": "7c96"
     }
   ],
   "budgets": [
     {
       "category": "Entertainment",
-      "maximum": 50.0,
-      "theme": "#277C78"
+      "maximum": 50,
+      "theme": "#277C78",
+      "id": "c37a"
     },
     {
       "category": "Bills",
-      "maximum": 750.0,
-      "theme": "#82C9D7"
+      "maximum": 750,
+      "theme": "#82C9D7",
+      "id": "f407"
     },
     {
       "category": "Dining Out",
-      "maximum": 75.0,
-      "theme": "#F2CDAC"
+      "maximum": 75,
+      "theme": "#F2CDAC",
+      "id": "160d"
     },
     {
       "category": "Personal Care",
-      "maximum": 100.0,
-      "theme": "#626070"
+      "maximum": 100,
+      "theme": "#626070",
+      "id": "20d3"
     }
   ],
   "pots": [
     {
       "name": "Savings",
-      "target": 2000.0,
-      "total": 159.0,
-      "theme": "#277C78"
+      "target": 2000,
+      "total": 159,
+      "theme": "#277C78",
+      "id": "0b68"
     },
     {
       "name": "Concert Ticket",
-      "target": 150.0,
-      "total": 110.0,
-      "theme": "#626070"
+      "target": 150,
+      "total": 110,
+      "theme": "#626070",
+      "id": "8a61"
     },
     {
       "name": "Gift",
-      "target": 150.0,
-      "total": 110.0,
-      "theme": "#82C9D7"
+      "target": 150,
+      "total": 110,
+      "theme": "#82C9D7",
+      "id": "fafa"
     },
     {
       "name": "New Laptop",
-      "target": 1000.0,
-      "total": 10.0,
-      "theme": "#F2CDAC"
+      "target": 1000,
+      "total": 10,
+      "theme": "#F2CDAC",
+      "id": "2ff2"
     },
     {
       "name": "Holiday",
-      "target": 1440.0,
-      "total": 531.0,
-      "theme": "#826CB0"
+      "target": 5000,
+      "total": 800,
+      "theme": "#826CB0",
+      "id": "65af"
+    },
+    {
+      "id": "a500",
+      "name": "Car",
+      "target": 10000,
+      "theme": "#826CB0",
+      "total": 1000
     }
   ]
 }

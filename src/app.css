@@ -13,8 +13,13 @@
 
 /* Text Preset 1 - 32px, 120%, 0 letter-spacing, Bold */
 .text-preset-1 {
-  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  font-family:
+    'Public Sans',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
   font-size: 32px;
   line-height: 120%;
   letter-spacing: 0;
@@ -23,8 +28,13 @@
 
 /* Text Preset 2 - 20px, 120%, 0 letter-spacing, Bold */
 .text-preset-2 {
-  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  font-family:
+    'Public Sans',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0;
@@ -33,8 +43,13 @@
 
 /* Text Preset 3 - 16px, 150%, 0 letter-spacing, Bold */
 .text-preset-3 {
-  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  font-family:
+    'Public Sans',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0;
@@ -43,8 +58,13 @@
 
 /* Text Preset 4 - 14px, 150%, 0 letter-spacing, Regular */
 .text-preset-4 {
-  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  font-family:
+    'Public Sans',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
   font-size: 14px;
   line-height: 150%;
   letter-spacing: 0;
@@ -53,8 +73,13 @@
 
 /* Text Preset 4 Bold - 14px, 150%, 0 letter-spacing, Bold */
 .text-preset-4-bold {
-  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  font-family:
+    'Public Sans',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
   font-size: 14px;
   line-height: 150%;
   letter-spacing: 0;
@@ -63,8 +88,13 @@
 
 /* Text Preset 5 - 12px, 150%, 0 letter-spacing, Regular */
 .text-preset-5 {
-  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  font-family:
+    'Public Sans',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
   font-size: 12px;
   line-height: 150%;
   letter-spacing: 0;
@@ -73,8 +103,13 @@
 
 /* Text Preset 5 Bold - 12px, 150%, 0 letter-spacing, Bold */
 .text-preset-5-bold {
-  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  font-family:
+    'Public Sans',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
   font-size: 12px;
   line-height: 150%;
   letter-spacing: 0;
@@ -151,7 +186,9 @@
   font: inherit;
   text-align: left;
   position: relative;
-  transition: background-color 0.2s, color 0.2s;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
 }
 
 .sidebar-nav-link:hover {
@@ -167,7 +204,7 @@
 }
 
 .sidebar-nav-link--active::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0 auto 0 0;
   width: 3px;
@@ -238,16 +275,12 @@
 }
 
 .overview-card .displayincome {
-
   width: 399px;
   height: 119px;
   padding: 24px;
   border-radius: 20px;
   background: #fff;
   color: #000;
-
-
-
 }
 
 /* .overview-card .overviewdisplaypot {
@@ -261,7 +294,6 @@
 /* =========================
      Pots Card
   ========================= */
-
 
 /* buttons */
 .see-details {
@@ -284,8 +316,6 @@
 .overview-c1 {
   height: 761px;
   width: 608px;
-
-
 }
 
 .overview-c1 .overview-pot {
@@ -294,7 +324,6 @@
   background-color: white;
   border-radius: 24px;
   padding: 24px;
-
 }
 
 .overview-pot-row1 {
@@ -302,24 +331,20 @@
   height: 24px;
   display: flex;
   justify-content: space-between;
-
-
 }
 
 .overview-display-pot-row-2 {
-
   display: flex;
   grid-column: span;
   gap: 40px;
   padding: 32px;
   border-radius: 20px;
-
 }
 
 .overview-display-pot-row-2 .pot-total-saved {
   width: 247px;
   height: 110px;
-  background-color: #F8F4F0;
+  background-color: #f8f4f0;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -330,7 +355,7 @@
 .overview-display-pot-row-2 .overview-display-pot-row-2-secound-half {
   width: 247px;
   height: 110px;
-  background-color: ;
+  background-color:;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -346,17 +371,16 @@
   border-radius: 6px;
   padding-left: 16px;
   margin-bottom: 16px;
-
 }
 
 .pot-savings-lable::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: px;
   width: 4px;
   height: 43px;
-  background-color: #277C78;
+  background-color: #277c78;
   border-radius: 999px;
 }
 
@@ -370,23 +394,21 @@
 }
 
 .pot-gift::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: px;
   width: 4px;
   height: 43px;
-  background-color: #82C9D7;
+  background-color: #82c9d7;
   border-radius: 999px;
 }
-
 
 .overview-c2 {
   width: 428px;
   height: 761px;
   background-color: transparent;
   border-radius: 20px;
-
 }
 
 /* .pot-Concert-lable {
@@ -416,12 +438,10 @@
   background-color: 0;
   border-radius: 6px;
   padding-left: 16px;
-
-
 }
 
 .pot-Concert::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: px;
@@ -442,13 +462,13 @@
 }
 
 .pot-Laptop::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: px;
   width: 4px;
   height: 43px;
-  background-color: #F2CDAC;
+  background-color: #f2cdac;
   border-radius: 999px;
 }
 
@@ -457,12 +477,10 @@
   height: 218px;
   padding: 25px;
   border-radius: 20px;
-  background-color: #FFFFFF;
-
+  background-color: #ffffff;
 }
 
 /* Overviwe Transaction  */
-
 
 .overview .overview-transaction {
   width: 608px;
@@ -471,7 +489,6 @@
   border-radius: 20px;
   margin-top: 24px;
   padding: 24px;
-
 }
 
 .overview .overview-transaction .overview-transaction-line1 {
@@ -488,8 +505,6 @@
   border: #000;
   width: 77px;
   height: 21px;
-
-
 }
 
 .overview .overview-transaction .overview-transaction-line2 {
@@ -501,7 +516,6 @@
   gap: 0px;
   text-align: end;
   margin-top: 32px;
-
 }
 
 .overview .overview-transaction .overview-transaction-line2 .section1 {
@@ -510,17 +524,13 @@
   width: 474px;
   height: 40px;
   align-items: center;
-
 }
 
 .overview .overview-transaction .overview-transaction-line2 .section1 .dp {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-
 }
-
-
 
 .overview .overview-transaction .overview-transaction-line2 .section2 {
   width: 71px;
@@ -534,9 +544,7 @@
   background-color: white;
   border-radius: 20px;
   margin-bottom: 24px;
-
 }
-
 
 .overview-c2 .overview-budgets .overview-budgets-row1 {
   width: 364px;
@@ -554,10 +562,7 @@
   border-radius: 20px;
   background-color: white;
   padding: 32px;
-
-
 }
-
 
 .overview-c2 .overview-recurring-bill .overview-recurring-bill-row1 {
   width: 364px;
@@ -565,19 +570,12 @@
   display: flex;
   grid-column: span;
   gap: 130px;
-
 }
-
-
 
 .overview-c2 .overview-recurring-bill .overview-recurring-bill-list {
   width: 364px;
   height: 207px;
   margin-top: 32px;
-
-
-
-
 }
 
 .overview-c2 .overview-recurring-bill .overview-recurring-bill-list .paid-bills {
@@ -586,17 +584,14 @@
   display: flex;
   justify-content: space-between;
 
-
-  background-color: #F8F4F0;
+  background-color: #f8f4f0;
   border-radius: 15px;
   align-items: center;
   margin-bottom: 12px;
   padding: 12px;
   background-color: #f5f5f5;
-  border-left: 4px solid #277C78;
+  border-left: 4px solid #277c78;
   border-radius: 6px;
-
-
 }
 
 .overview-c2 .overview-recurring-bill .overview-recurring-bill-list .total-upcoming {
@@ -605,13 +600,13 @@
   display: flex;
   justify-content: space-between;
 
-  background-color: #F8F4F0;
+  background-color: #f8f4f0;
   border-radius: 15px;
   align-items: center;
   margin-bottom: 12px;
   padding: 12px;
   background-color: #f5f5f5;
-  border-left: 4px solid #F2CDAC;
+  border-left: 4px solid #f2cdac;
   border-radius: 6px;
 }
 
@@ -621,16 +616,15 @@
   display: flex;
   justify-content: space-between;
 
-  background-color: #F8F4F0;
+  background-color: #f8f4f0;
   border-radius: 15px;
   align-items: center;
   margin-bottom: 12px;
   padding: 12px;
   background-color: #f5f5f5;
-  border-left: 4px solid #82C9D7;
+  border-left: 4px solid #82c9d7;
   border-radius: 6px;
 }
-
 
 /* =========================
     Transaction page
@@ -654,7 +648,6 @@
   padding: 10px;
   justify-content: space-between;
   margin-bottom: 20px;
-
 }
 
 .transaction-search {
@@ -674,7 +667,6 @@
   height: 45px;
   /* background-color: pink; */
   align-items: center;
-
 }
 
 .transaction-sort {
@@ -706,7 +698,6 @@
   gap: 100px;
   /* background-color: aquamarine; */
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
-
 }
 
 .transaction-description .transaction-name {
@@ -718,12 +709,10 @@
   display: flex;
   grid-column: span;
   gap: 20px;
-
 }
 
 .transaction-elements-category {
   width: 120px;
-
 }
 
 .transaction-elements-transactiondate {
@@ -735,15 +724,10 @@
   text-align: end;
 }
 
-
-
-
-
 .page-transactions .transaction-log {
   display: flex;
   flex-direction: column;
   gap: 8px;
-
 }
 
 .page-transactions .transaction-row {
@@ -757,7 +741,6 @@
   box-shadow: 0px 0px 5px rgba(175, 174, 174, 0.06);
   margin: 16px 0px 16px 0px;
   border-radius: 20px;
-
 }
 
 .transaction-row .dp {
@@ -765,9 +748,6 @@
   height: 40px;
   border-radius: 20px;
   align-items: center;
-
-
-
 }
 
 .transaction-row .dp-name {
@@ -778,7 +758,6 @@
   width: 428px;
   height: 40px;
   padding-left: 10px;
-
 }
 
 .transaction-row .cta {
@@ -787,8 +766,6 @@
   gap: 50px;
   align-items: center;
   padding-left: 15px;
-
-
 }
 
 .transaction-row .cta-category {
@@ -801,13 +778,11 @@
   text-align: start;
   width: 120px;
   padding-left: 40px;
-
 }
 
 .transaction-row .cta-amount {
   text-align: end;
   width: 200px;
-
 }
 
 /* =========================footer Section ========================= */
@@ -821,8 +796,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px;
-
-
 }
 
 .transaction-footer-pages {
@@ -834,9 +807,6 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-
-
-
 }
 
 .transaction-footer-buttons-pev {
@@ -850,7 +820,6 @@
   width: 232px;
   display: flex;
   gap: 5px;
-
 }
 
 .transaction-footer-pages-button {
@@ -860,25 +829,16 @@
   background-color: transparent;
 }
 
-
-
 .transaction-footer-buttons-next {
   background-color: transparent;
   width: 93px;
   height: 40px;
   border-radius: 10px;
-
-
 }
-
-
-
-
 
 /* =========================
     Recurring page
   ========================= */
-
 
 .page-recurring {
   width: 1060px;
@@ -897,8 +857,6 @@
   border-radius: 20px;
   padding: 24px;
   color: white;
-
-
 }
 
 .page-recurring-totalbills-icon {
@@ -907,8 +865,6 @@
   margin-bottom: 32px;
 }
 
-
-
 .page-recurring-summary {
   width: 337px;
   height: 204px;
@@ -916,9 +872,6 @@
   background-color: white;
   border-radius: 20px;
   margin-top: 24px;
-
-
-
 }
 
 .page-recurring-summary-PB {
@@ -928,7 +881,6 @@
   margin: 16px 0px 16px 0px;
 }
 
-
 .page-recurring-billslogs {
   width: 699px;
   height: 742px;
@@ -937,14 +889,12 @@
   border-radius: 20px;
 }
 
-
 .page-recurring-controls {
   width: 635px;
   height: 45px;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
-
 }
 
 .recurring-search {
@@ -956,7 +906,6 @@
   height: 45px;
 }
 
-
 .recurring-controls-dropdown {
   display: flex;
   justify-content: flex-end;
@@ -967,31 +916,21 @@
   align-items: center;
 }
 
-
 .recurring-descriptions {
   width: 635px;
   height: 42px;
-  background-color: ;
+  background-color:;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px 12px 16px;
   margin: 24px 0px 24px 0px;
-
-
-
 }
-
-
-
-
 
 .page-transactions .recurring-log {
   display: flex;
   flex-direction: column;
   gap: 8px;
-
-
 }
 
 .page-recurring .recurring-row {
@@ -1003,7 +942,6 @@
   box-shadow: 0px 0px 5px rgba(175, 174, 174, 0.06);
   margin: 16px 0px 16px 0px;
   padding: 0px 16px 0px 16px;
-
 }
 
 .recurring-row .dp {
@@ -1017,7 +955,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: ;
+  background-color:;
   width: 100%;
   padding-left: 70px;
 }
@@ -1029,12 +967,7 @@
   align-items: center;
   width: 319px;
   height: 32px;
-
-
 }
-
-
-
 
 /* =========================
     Pots page
@@ -1045,10 +978,6 @@
   border-radius: 20px;
   background-color: #;
   margin-top: 32px;
-
-
-
-
 }
 
 .pot-T-B {
@@ -1057,7 +986,7 @@
   height: 56px;
   display: flex;
   justify-content: space-between;
-  padding: ;
+  padding:;
 }
 
 .pot-add-button {
@@ -1067,7 +996,6 @@
   width: 129px;
   height: 53px;
   border-radius: 10px;
-
 }
 
 .pots-components {
@@ -1086,8 +1014,6 @@
   background-color: white;
   border-radius: 20px;
   padding: 24px;
-
-
 }
 
 .pots-components-buttons {
@@ -1096,12 +1022,11 @@
   background-color: 0;
   display: flex;
   justify-content: space-between;
-
 }
 
 .pots-components-each-button {
   width: 227px;
-  background-color: #F8F4F0;
+  background-color: #f8f4f0;
   color: black;
   border-radius: 10px;
   border: 0;
@@ -1121,11 +1046,72 @@
   color: #696868;
 }
 
-
 .pots-components-r1 {
   display: flex;
   justify-content: space-between;
+}
 
+/* Pot Add Money / Withdraw modal */
+.pot-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.pot-modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pot-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.pot-modal-current {
+  color: #696868;
+  margin-bottom: 16px;
+}
+
+.pot-modal-form {
+  margin-bottom: 16px;
+}
+
+.pot-modal-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.pot-modal-form .add-amount {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.pot-modal-error {
+  color: #c00;
+  margin-bottom: 12px;
+}
+
+.pot-modal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pot-modal-actions .submit-button,
+.pot-modal-actions .goback-buttons {
+  width: 100%;
 }
 
 .actions-wrapper {
@@ -1139,16 +1125,12 @@
   background-color: transparent;
 }
 
-
-
 /* =========================
     budgets page
   ========================= */
 
-
-
 .budgets-components {
-  background-color: ;
+  background-color:;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
@@ -1168,8 +1150,6 @@
   background-color: lightgoldenrodyellow;
   margin-bottom: 32px;
   text-align: center;
-
-
 }
 
 .budgets-components-template {
@@ -1187,7 +1167,6 @@
   width: 134px;
   height: 91px;
   padding: 12px 20px 12px 20px;
-
 }
 
 .budgets-components-r1 {
@@ -1195,14 +1174,12 @@
   overflow: visible;
 }
 
-
 .budgets-components-transaction-log {
-  background-color: #F8F4F0;
+  background-color: #f8f4f0;
   width: 544px;
   height: 254px;
   border-radius: 20px;
   padding: 20px;
-
 }
 
 .budgets-component-pot-row1 {
@@ -1210,7 +1187,6 @@
   height: 24px;
   display: flex;
   justify-content: space-between;
-
 }
 
 .budgets-components-progress-bar {
@@ -1220,7 +1196,6 @@
   /* background-color: lightgray; */
 }
 
-
 .progress {
   width: 100%;
   height: 24px;
@@ -1229,7 +1204,6 @@
   overflow: hidden;
   margin-bottom: 16px;
   margin-top: 16px;
-
 }
 
 .progress-fill {
@@ -1239,8 +1213,6 @@
   background: #2f7f7a;
   border-radius: 5px;
 }
-
-
 
 .budgets-components-progress-bar-details {
   display: flex;
@@ -1257,20 +1229,17 @@
   border-radius: 6px;
   padding-left: 16px;
   /* important */
-
-
 }
 
 .spentline::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: px;
   width: 4px;
   height: 43px;
-  background-color: #277C78;
+  background-color: #277c78;
   border-radius: 999px;
-
 }
 
 .Remainingline {
@@ -1283,24 +1252,20 @@
 }
 
 .Remainingline::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: px;
   width: 4px;
   height: 43px;
-  background-color: #F8F4F0;
+  background-color: #f8f4f0;
   border-radius: 999px;
-
 }
 
 .budgets-components-r1 {
   display: flex;
   justify-content: space-between;
-
 }
-
-
 
 .budgets-transaction-line2 {
   margin-top: 20px;
@@ -1319,25 +1284,18 @@
   width: px;
   height: 32px;
   align-items: center;
-
-
 }
 
 .budgets-transaction-line2 .section1 .dp {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-
 }
-
-
 
 .budgets-transaction-line2 .section2 {
   /* background-color: blue; */
   text-align: end;
 }
-
-
 
 /*---------------------------------------------------------------------------------
 /* =========================
@@ -1347,12 +1305,9 @@
 .add-budget {
   width: 560px;
   height: 490px;
-  background-color: ;
+  background-color:;
   padding: 32px;
   border-radius: 20px;
-
-
-
 }
 
 .add-budget {
@@ -1361,9 +1316,6 @@
   background-color: white;
   padding: 32px;
   border-radius: 20px;
-
-
-
 }
 
 .title-control {
@@ -1372,7 +1324,6 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-
 }
 
 .cancel-add {
@@ -1390,8 +1341,6 @@
   height: 233px;
   background-color: 0;
   margin-bottom: 20px;
-
-
 }
 
 .dropdown {
@@ -1399,8 +1348,6 @@
   height: 45px;
   border-radius: 10px;
   align-items: center;
-
-
 }
 
 .amount-box {
@@ -1414,11 +1361,6 @@
   border-radius: 10px;
 }
 
-
-
-
-
-
 .submit-button {
   width: 496px;
   height: 53px;
@@ -1426,9 +1368,6 @@
   color: white;
   border-radius: 10px;
 }
-
-
-
 
 .deleted-budget {
   width: 560px;
@@ -1447,12 +1386,11 @@
 .deletedbuttons {
   width: 496px;
   height: 53px;
-  background-color: #C94736;
+  background-color: #c94736;
   color: white;
   border-radius: 10px;
   border: 0;
   margin-bottom: 20px;
-
 }
 
 .goback-buttons {
@@ -1461,11 +1399,6 @@
   background-color: transparent;
   border: 0;
 }
-
-
-
-
-
 
 .dropdown-menu {
   position: absolute;

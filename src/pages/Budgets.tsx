@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 import type { Transaction } from '../types';
-import { useNavigate } from "react-router-dom";
-import PieChart from "../components/PieChart";
-import { Actions } from "./Actions";
-
+import { useNavigate } from 'react-router-dom';
+import PieChart from '../components/PieChart';
+import { Actions } from './Actions';
 
 function Budgets() {
   const [data, setData] = useState<Transaction[]>([]);
@@ -18,83 +17,74 @@ function Budgets() {
       .catch((error) => {
         console.error('Failed to load transactions data', error);
       });
-  },
-    []);
-
-
+  }, []);
 
   return (
     <div className="page budgets">
-
-
-
       <div className="pot-T-B">
         <h1>Budgets</h1>
-        <button className="pot-add-button" onClick={() => { navigate("/AddNewBudget") }}> + Add New Budget
-
-
+        <button
+          className="pot-add-button"
+          onClick={() => {
+            navigate('/AddNewBudget');
+          }}
+        >
+          {' '}
+          + Add New Budget
         </button>
       </div>
 
-      <div className='budgets-components'>
-
-
-
-
-        <div className='budgets-component-graph'>
-          <div className='budgets-component-fig'>
+      <div className="budgets-components">
+        <div className="budgets-component-graph">
+          <div className="budgets-component-fig">
             <PieChart />
           </div>
-
-
         </div>
 
         <div>
           <div className="budgets-components-savings">
-            <div className="budgets-components-template" >
-
+            <div className="budgets-components-template">
               <div className="budgets-components-r1">
                 <div className="title text-preset-2-bold">Entertainment</div>
 
-
-                <Actions
-                  name="Entertainment"
-                  from="/budgets" edit="/EditBudget"
-                />
-
+                <Actions name="Entertainment" from="/budgets" edit="/EditBudget" />
               </div>
 
-
               <div className="budgets-components-progress-bar">
-                <div className=' text-preset-4'>Maximum of $50.00 </div>
+                <div className=" text-preset-4">Maximum of $50.00 </div>
 
                 <div className="progress">
                   <div className="progress-fill" />
                 </div>
 
                 <div className="budgets-components-progress-bar-details">
-
-                  <div className='spentline'> Spent
-                    <div className=' text-preset-4-bold'>  $15.00</div>
+                  <div className="spentline">
+                    {' '}
+                    Spent
+                    <div className=" text-preset-4-bold"> $15.00</div>
                   </div>
 
-                  <div className='Remainingline'>Remaining
-                    <div className=' text-preset-4-bold'> $35.00 </div>
+                  <div className="Remainingline">
+                    Remaining
+                    <div className=" text-preset-4-bold"> $35.00 </div>
                   </div>
                 </div>
               </div>
 
               <div className="budgets-components-transaction-log">
-
                 <div className="budgets-component-pot-row1">
-                  <div className=' text-preset-3'>Latest Spending </div>
-                  <button className="see-details text-preset-4">See All
-                    <img src="/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
+                  <div className=" text-preset-3">Latest Spending </div>
+                  <button className="see-details text-preset-4">
+                    See All
+                    <img src="/assets/images/icon-caret-right.svg" alt="" className="arrowright" />
                   </button>
                 </div>
 
                 {data.map((transaction) => (
-                  <div className="budgets-transaction-line2" key={transaction.date + transaction.name}>
+                  <div
+                    className="budgets-transaction-line2"
+                    key={transaction.date + transaction.name}
+                  >
                     <div className="section1">
                       <img src={transaction.avatar} alt="" className="dp" />
                       <p className=" text-preset-5-bold">{transaction.name}</p>
@@ -110,51 +100,52 @@ function Budgets() {
                         })}
                       </p>
                     </div>
-                  </div>))}
+                  </div>
+                ))}
               </div>
-
             </div>
 
-            <div className="budgets-components-template" >
-
+            <div className="budgets-components-template">
               <div className="budgets-components-r1">
                 <div className="title text-preset-2-bold">Bills</div>
-                <Actions
-                  name="Bills"
-                  from="/budgets" edit="/EditBudget" />
+                <Actions name="Bills" from="/budgets" edit="/EditBudget" />
               </div>
 
-
               <div className="budgets-components-progress-bar">
-                <div className=' text-preset-4'>Maximum of $50.00 </div>
+                <div className=" text-preset-4">Maximum of $50.00 </div>
 
                 <div className="progress">
                   <div className="progress-fill" />
                 </div>
 
                 <div className="budgets-components-progress-bar-details">
-
-                  <div className='spentline'> Spent
-                    <div className=' text-preset-4-bold'>  $15.00</div>
+                  <div className="spentline">
+                    {' '}
+                    Spent
+                    <div className=" text-preset-4-bold"> $15.00</div>
                   </div>
 
-                  <div className='Remainingline'>Remaining
-                    <div className=' text-preset-4-bold'> $35.00 </div>
+                  <div className="Remainingline">
+                    Remaining
+                    <div className=" text-preset-4-bold"> $35.00 </div>
                   </div>
                 </div>
               </div>
 
               <div className="budgets-components-transaction-log">
-
                 <div className="budgets-component-pot-row1">
-                  <div className=' text-preset-3'>Latest Spending </div>
-                  <button className="see-details text-preset-4">See All
-                    <img src="/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
+                  <div className=" text-preset-3">Latest Spending </div>
+                  <button className="see-details text-preset-4">
+                    See All
+                    <img src="/assets/images/icon-caret-right.svg" alt="" className="arrowright" />
                   </button>
                 </div>
 
                 {data.map((transaction) => (
-                  <div className="budgets-transaction-line2" key={transaction.date + transaction.name}>
+                  <div
+                    className="budgets-transaction-line2"
+                    key={transaction.date + transaction.name}
+                  >
                     <div className="section1">
                       <img src={transaction.avatar} alt="" className="dp" />
                       <p className=" text-preset-5-bold">{transaction.name}</p>
@@ -170,49 +161,52 @@ function Budgets() {
                         })}
                       </p>
                     </div>
-                  </div>))}
+                  </div>
+                ))}
               </div>
-
             </div>
 
-            <div className="budgets-components-template" >
-
+            <div className="budgets-components-template">
               <div className="budgets-components-r1">
                 <div className="title text-preset-2-bold">Dining Out</div>
-                <Actions name="DiningOut"
-                  from="/budgets" edit="/EditBudget" />              </div>
-
+                <Actions name="DiningOut" from="/budgets" edit="/EditBudget" />{' '}
+              </div>
 
               <div className="budgets-components-progress-bar">
-                <div className=' text-preset-4'>Maximum of $50.00 </div>
+                <div className=" text-preset-4">Maximum of $50.00 </div>
 
                 <div className="progress">
                   <div className="progress-fill" />
                 </div>
 
                 <div className="budgets-components-progress-bar-details">
-
-                  <div className='spentline'> Spent
-                    <div className=' text-preset-4-bold'>  $15.00</div>
+                  <div className="spentline">
+                    {' '}
+                    Spent
+                    <div className=" text-preset-4-bold"> $15.00</div>
                   </div>
 
-                  <div className='Remainingline'>Remaining
-                    <div className=' text-preset-4-bold'> $35.00 </div>
+                  <div className="Remainingline">
+                    Remaining
+                    <div className=" text-preset-4-bold"> $35.00 </div>
                   </div>
                 </div>
               </div>
 
               <div className="budgets-components-transaction-log">
-
                 <div className="budgets-component-pot-row1">
-                  <div className=' text-preset-3'>Latest Spending </div>
-                  <button className="see-details text-preset-4">See All
-                    <img src="/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
+                  <div className=" text-preset-3">Latest Spending </div>
+                  <button className="see-details text-preset-4">
+                    See All
+                    <img src="/assets/images/icon-caret-right.svg" alt="" className="arrowright" />
                   </button>
                 </div>
 
                 {data.map((transaction) => (
-                  <div className="budgets-transaction-line2" key={transaction.date + transaction.name}>
+                  <div
+                    className="budgets-transaction-line2"
+                    key={transaction.date + transaction.name}
+                  >
                     <div className="section1">
                       <img src={transaction.avatar} alt="" className="dp" />
                       <p className=" text-preset-5-bold">{transaction.name}</p>
@@ -228,51 +222,52 @@ function Budgets() {
                         })}
                       </p>
                     </div>
-                  </div>))}
+                  </div>
+                ))}
               </div>
-
             </div>
 
-
-            <div className="budgets-components-template" >
-
+            <div className="budgets-components-template">
               <div className="budgets-components-r1">
                 <div className="title text-preset-2-bold">Personal Care</div>
-                <Actions
-                  name="PersonalCare"
-                  from="/budgets" edit="/EditBudget" />              </div>
-
+                <Actions name="PersonalCare" from="/budgets" edit="/EditBudget" />{' '}
+              </div>
 
               <div className="budgets-components-progress-bar">
-                <div className=' text-preset-4'>Maximum of $50.00 </div>
+                <div className=" text-preset-4">Maximum of $50.00 </div>
 
                 <div className="progress">
                   <div className="progress-fill" />
                 </div>
 
                 <div className="budgets-components-progress-bar-details">
-
-                  <div className='spentline'> Spent
-                    <div className=' text-preset-4-bold'>  $15.00</div>
+                  <div className="spentline">
+                    {' '}
+                    Spent
+                    <div className=" text-preset-4-bold"> $15.00</div>
                   </div>
 
-                  <div className='Remainingline'>Remaining
-                    <div className=' text-preset-4-bold'> $35.00 </div>
+                  <div className="Remainingline">
+                    Remaining
+                    <div className=" text-preset-4-bold"> $35.00 </div>
                   </div>
                 </div>
               </div>
 
               <div className="budgets-components-transaction-log">
-
                 <div className="budgets-component-pot-row1">
-                  <div className=' text-preset-3'>Latest Spending </div>
-                  <button className="see-details text-preset-4">See All
-                    <img src="/assets/images/icon-caret-right.svg" alt="" className='arrowright' />
+                  <div className=" text-preset-3">Latest Spending </div>
+                  <button className="see-details text-preset-4">
+                    See All
+                    <img src="/assets/images/icon-caret-right.svg" alt="" className="arrowright" />
                   </button>
                 </div>
 
                 {data.map((transaction) => (
-                  <div className="budgets-transaction-line2" key={transaction.date + transaction.name}>
+                  <div
+                    className="budgets-transaction-line2"
+                    key={transaction.date + transaction.name}
+                  >
                     <div className="section1">
                       <img src={transaction.avatar} alt="" className="dp" />
                       <p className=" text-preset-5-bold">{transaction.name}</p>
@@ -288,15 +283,13 @@ function Budgets() {
                         })}
                       </p>
                     </div>
-                  </div>))}
+                  </div>
+                ))}
               </div>
-
             </div>
           </div>
-
         </div>
       </div>
-
     </div>
   );
 }

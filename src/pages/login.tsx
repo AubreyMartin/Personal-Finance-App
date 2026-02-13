@@ -1,14 +1,14 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useState } from 'react';
 
 function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [remember, setRemember] = useState(true);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     // Replace this with real authentication logic.
-    console.log("Sign in attempt", { email, password, remember });
+    console.log('Sign in attempt', { email, password, remember });
   };
 
   return (
