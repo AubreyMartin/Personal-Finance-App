@@ -1,16 +1,50 @@
 import { useEffect, useState } from 'react';
 import type { Transaction } from '../types';
+import { getTransactions } from '../api/transactionsApi';
 
 function Recurring() {
   const [data, setData] = useState<Transaction[]>([]);
+  const [totalBills, setTotalBills] = useState<number>(0);
+  const [paidBills, setPaidBills] = useState<number>(0);
+  const [upcomingbills, setUpcomingBills] = useState<number>(0);
 
   useEffect(() => {
-    fetch('/data.json')
-      .then((res) => res.json())
-      .then((transationdata: { transactions: Transaction[] }) => {
-        setData(transationdata.transactions);
-      });
+    getTransactions().then((transactions: Transaction[]) => {
+      setData(transactions);
+    });
   }, []);
+
+  useEffect(() => {
+    if (data.length > 0) {
+      const recurringbills = data.filter((transaction) => transaction.recurring);
+      let totalAmount = 0;
+      for (let i = 0; i < recurringbills.length; i++) {
+        totalAmount += recurringbills[i].amount;
+      }
+
+      const paidbills = data.filter((transaction) => transaction.paid);
+
+      let totalPaidAmount = 0;
+      for (let i = 0; i < paidbills.length; i++) {
+        totalPaidAmount += paidbills[i].amount;
+      }
+
+      const upcomingbills = recurringbills.filter((transaction) => {
+        const today = new Date().getDate();
+        const dueDate = new Date(transaction.date).getDate();
+        return dueDate >= today;
+      });
+
+      let upComingAmount = 0;
+      for (let i = 0; i < upcomingbills.length; i++) {
+        upComingAmount += upcomingbills[i].amount;
+      }
+
+      setPaidBills(totalPaidAmount);
+      setTotalBills(totalAmount);
+      setUpcomingBills(upComingAmount);
+    }
+  }, [data]);
 
   return (
     <div>
@@ -25,22 +59,22 @@ function Recurring() {
             </div>
             <div>
               <h3 className=" text-preset-4">Total Bills</h3>
-              <div className=" text-preset-1">$384.98</div>
+              <div className=" text-preset-1">${totalBills}</div>
             </div>
           </div>
           <div className="page-recurring-summary">
             <div className=" text-preset-3">Summary</div>
             <div className="page-recurring-summary-PB">
               <div className=" text-preset-5">Paid Bills </div>
-              <div className=" text-preset-5-bold">4 ($190.00)</div>
+              <div className=" text-preset-5-bold">${paidBills}</div>
             </div>
             <div className="page-recurring-summary-PB">
               <div className=" text-preset-5">Total Upcoming </div>
-              <div className=" text-preset-5-bold">4 ($194.98)</div>
+              <div className=" text-preset-5-bold">${upcomingbills.toFixed(2)}</div>
             </div>
             <div className="page-recurring-summary-PB">
               <div className=" text-preset-5">Due Soon </div>
-              <div className=" text-preset-5-bold">$2 ($59.98)</div>
+              <div className=" text-preset-5-bold"> ($59.98)</div>
             </div>
           </div>
         </div>

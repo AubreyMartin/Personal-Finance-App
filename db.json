@@ -91,7 +91,7 @@
       "name": "Pixel Playground",
       "category": "Entertainment",
       "date": "2024-08-11T18:45:38Z",
-      "amount": -10,
+      "amount": 10,
       "recurring": true,
       "id": "070f"
     },
@@ -154,7 +154,7 @@
       "name": "Elevate Education",
       "category": "Education",
       "date": "2024-08-04T11:15:22Z",
-      "amount": -50,
+      "amount": 50,
       "recurring": true,
       "id": "5549"
     },
@@ -163,7 +163,7 @@
       "name": "Serenity Spa & Wellness",
       "category": "Personal Care",
       "date": "2024-08-03T14:00:37Z",
-      "amount": -30,
+      "amount": 30,
       "recurring": true,
       "id": "2448"
     },
@@ -172,7 +172,7 @@
       "name": "Spark Electric Solutions",
       "category": "Bills",
       "date": "2024-08-02T09:25:11Z",
-      "amount": -100,
+      "amount": 100,
       "recurring": true,
       "id": "f70d"
     },
@@ -199,18 +199,20 @@
       "name": "Aqua Flow Utilities",
       "category": "Bills",
       "date": "2024-07-30T13:20:14Z",
-      "amount": -100,
+      "amount": 100,
       "recurring": true,
-      "id": "6cf2"
+      "id": "6cf2",
+      "paid": true
     },
     {
       "avatar": "./assets/images/avatars/ecofuel-energy.jpg",
       "name": "EcoFuel Energy",
       "category": "Bills",
       "date": "2024-07-29T11:55:29Z",
-      "amount": -35,
+      "amount": 35,
       "recurring": true,
-      "id": "3200"
+      "id": "3200",
+      "paid": true
     },
     {
       "avatar": "./assets/images/avatars/yuna-kim.jpg",
@@ -262,7 +264,7 @@
       "name": "ByteWise",
       "category": "Lifestyle",
       "date": "2024-07-23T09:35:14Z",
-      "amount": -49.99,
+      "amount": 49.99,
       "recurring": true,
       "id": "c031"
     },
@@ -271,7 +273,7 @@
       "name": "Nimbus Data Storage",
       "category": "Bills",
       "date": "2024-07-21T10:05:42Z",
-      "amount": -9.99,
+      "amount": 9.99,
       "recurring": true,
       "id": "3655"
     },
@@ -415,7 +417,7 @@
       "name": "Elevate Education",
       "category": "Education",
       "date": "2024-07-05T11:15:22Z",
-      "amount": -50,
+      "amount": 50,
       "recurring": true,
       "id": "94bc"
     },
@@ -424,7 +426,7 @@
       "name": "Serenity Spa & Wellness",
       "category": "Personal Care",
       "date": "2024-07-03T14:00:37Z",
-      "amount": -30,
+      "amount": 30,
       "recurring": true,
       "id": "a8c8"
     },
@@ -433,7 +435,7 @@
       "name": "Spark Electric Solutions",
       "category": "Bills",
       "date": "2024-07-02T09:25:51Z",
-      "amount": -100,
+      "amount": 100,
       "recurring": true,
       "id": "faf2"
     },
@@ -482,13 +484,6 @@
       "id": "0b68"
     },
     {
-      "name": "Concert Ticket",
-      "target": 150,
-      "total": 110,
-      "theme": "#626070",
-      "id": "8a61"
-    },
-    {
       "name": "Gift",
       "target": 150,
       "total": 110,
@@ -497,7 +492,7 @@
     },
     {
       "name": "New Laptop",
-      "target": 1000,
+      "target": 500,
       "total": 10,
       "theme": "#F2CDAC",
       "id": "2ff2"
@@ -512,9 +507,16 @@
     {
       "id": "a500",
       "name": "Car",
-      "target": 10000,
+      "target": 5000,
       "theme": "#826CB0",
-      "total": 1000
+      "total": 11200
+    },
+    {
+      "id": "a48a",
+      "name": "MacBook",
+      "target": 1000,
+      "theme": "#277C78",
+      "total": 100
     }
   ]
 }
