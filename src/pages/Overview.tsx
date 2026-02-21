@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import type { Transaction, Balance } from '../types';
 import { useNavigate } from 'react-router-dom';
 import { usePotsInfo } from '../hooks/usePotsInfo';
-import PieChartOverview from '../components/PieChartOverview';
+// import PieChartOverview from '../components/PieChartOverview';
+import DonutChart from '../components/PieChartMUI';
 
 function Overview() {
   const [balance, setBalance] = useState<Balance>({ current: 0, income: 0, expenses: 0 });
@@ -189,7 +190,9 @@ function Overview() {
                 </button>
               </div>
               <div>
-                <PieChartOverview />
+                {/* <PieChartOverview /> */}
+
+                <DonutChart />
               </div>
             </div>
 
