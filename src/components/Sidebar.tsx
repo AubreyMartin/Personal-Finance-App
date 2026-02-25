@@ -34,9 +34,12 @@ function Sidebar() {
   };
 
   return (
-    <aside className={`sidebar ${isMinimized ? 'sidebar--minimized' : ''}`}>
-      <div>
-        <img src="/assets/images/logo-large.svg" alt="logo-large" className="logo-large" />
+    <aside
+      className={`sidebar ${isMinimized ? 'sidebar--minimized' : ''}`}
+      aria-label="Main navigation"
+    >
+      <div className="sidebar-desktop-logo">
+        <img src="/assets/images/logo-large.svg" alt="" className="logo-large" />
       </div>
       <nav className="sidebar-nav">
         <ul className="sidebar-nav-list">
@@ -54,22 +57,23 @@ function Sidebar() {
               </Link>
             </li>
           ))}
+          <li className="sidebar-nav-item sidebar-nav-item--minimize">
+            <button
+              type="button"
+              className="sidebar-nav-link sidebar-nav-link--minimize"
+              onClick={toggleMinimize}
+              aria-label={isMinimized ? 'Expand menu' : 'Minimize menu'}
+              title={isMinimized ? 'Expand menu' : 'Minimize menu'}
+            >
+              <img
+                src="/assets/images/icon-minimize-menu.svg"
+                alt={isMinimized ? 'Expand' : 'Minimize'}
+                className="sidebar-nav-icon"
+              />
+              {!isMinimized && <span className="sidebar-nav-label">Minimize Menu</span>}
+            </button>
+          </li>
         </ul>
-        <li className="sidebar-nav-item">
-          <button
-            className="sidebar-nav-link sidebar-nav-link--minimize"
-            onClick={toggleMinimize}
-            aria-label={isMinimized ? 'Expand menu' : 'Minimize menu'}
-            title={isMinimized ? 'Expand menu' : 'Minimize menu'}
-          >
-            <img
-              src="/assets/images/icon-minimize-menu.svg"
-              alt={isMinimized ? 'Expand' : 'Minimize'}
-              className="sidebar-nav-icon"
-            />
-            {!isMinimized && <span className="sidebar-nav-label">Minimize Menu</span>}
-          </button>
-        </li>
       </nav>
     </aside>
   );

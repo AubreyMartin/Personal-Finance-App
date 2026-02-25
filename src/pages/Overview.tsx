@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { usePotsInfo } from '../hooks/usePotsInfo';
 // import PieChartOverview from '../components/PieChartOverview';
 import DonutChart from '../components/PieChartMUI';
+import { getBudgets } from '../api/budgetsApi';
 
 function Overview() {
   const [balance, setBalance] = useState<Balance>({ current: 0, income: 0, expenses: 0 });
@@ -12,6 +13,29 @@ function Overview() {
 
   const Navigate = useNavigate();
   const potsInfo = usePotsInfo();
+
+  // const budgetsData = [
+  //   { id: 0, label: 'Entertainment', value: 15, color: '#2F7F7A', limit: 50 },
+  //   { id: 1, label: 'Bills', value: 150, color: '#8AC6D1', limit: 750 },
+  //   { id: 2, label: 'Dining Out', value: 133, color: '#F2C6A0', limit: 75 },
+  //   { id: 3, label: 'Personal Care', value: 40, color: '#5E5E6E', limit: 100 },
+  // ];
+
+  const [budgetsData, setBudgetData] = useState([]);
+
+  useEffect(() => {
+    getBudgets().then((budgets) => {
+      setBudgetData(
+        budgets.map((budget) => ({
+          id: budget.id,
+          label: budget.category,
+          value: budget.maximum,
+          color: budget.theme,
+          limit: budget.maximum,
+        })),
+      );
+    });
+  }, []);
 
   useEffect(() => {
     fetch('/data.json')
@@ -191,8 +215,7 @@ function Overview() {
               </div>
               <div>
                 {/* <PieChartOverview /> */}
-
-                <DonutChart />
+                <DonutChart data={budgetsData} />
               </div>
             </div>
 

@@ -119,12 +119,111 @@
 .layout {
   display: flex;
   min-height: 100vh;
+  position: relative;
+}
+
+/* Mobile/tablet app bar (hidden on desktop) */
+.layout-header {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 56px;
+  padding: 0 16px;
+  background: #000;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.layout-header-logo {
+  height: 28px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+}
+
+/* Bottom nav (tablet & phone only) */
+.bottom-nav {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 64px;
+  padding-bottom: env(safe-area-inset-bottom, 0);
+  background: #000;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.bottom-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 8px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4px;
+}
+
+.bottom-nav-item {
+  flex: 1;
+  min-width: 0;
+}
+
+.bottom-nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 100%;
+  min-height: 44px;
+  padding: 6px 4px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 500;
+  transition: color 0.2s, background-color 0.2s;
+  border-radius: 8px;
+}
+
+.bottom-nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.bottom-nav-link--active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.bottom-nav-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.bottom-nav-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  text-align: center;
 }
 
 .main-content {
   flex: 1;
   padding: 2rem;
   overflow-y: auto;
+  min-width: 0;
 }
 
 /* =========================
@@ -133,16 +232,23 @@
 
 .sidebar {
   width: 300px;
-  height: 1135px;
+  min-height: 100vh;
+  height: 100%;
   position: sticky;
+  top: 0;
   display: flex;
   flex-direction: column;
   background: #000;
   border-right: 1px solid rgba(14, 14, 14, 0.1);
   border-radius: 0 20px 20px 0;
   overflow-y: auto;
-  transition: width 0.3s ease;
+  transition: width 0.3s ease, transform 0.3s ease;
   padding: 40px 40px 40px 40px;
+  flex-shrink: 0;
+}
+
+.sidebar-desktop-logo {
+  display: block;
 }
 
 .sidebar--minimized {
@@ -161,22 +267,28 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar-nav-item {
-  margin: 0.25rem 0;
+  margin: 0;
+  flex-shrink: 0;
 }
 
-.sidebar-nav-item:last-child {
+.sidebar-nav-item--minimize {
   margin-top: auto;
   margin-bottom: 1rem;
 }
 
 .sidebar-nav-link {
   width: 100%;
+  min-height: 44px;
   padding: 0.75rem 1.5rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   gap: 1rem;
   background: none;
   border: none;
@@ -186,6 +298,7 @@
   font: inherit;
   text-align: left;
   position: relative;
+  box-sizing: border-box;
   transition:
     background-color 0.2s,
     color 0.2s;
@@ -211,15 +324,28 @@
   background: whitesmoke;
 }
 
+button.sidebar-nav-link {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 .sidebar-nav-icon {
   width: 20px;
+  min-width: 20px;
   height: 20px;
   flex-shrink: 0;
+  display: block;
+  object-fit: contain;
+  vertical-align: middle;
 }
 
 .sidebar-nav-label {
+  flex: 1;
+  min-width: 0;
   white-space: nowrap;
   transition: opacity 0.3s ease;
+  text-align: left;
 }
 
 .sidebar--minimized .sidebar-nav-label {
@@ -935,38 +1061,68 @@
 
 .page-recurring .recurring-row {
   width: 635px;
-  height: 32px;
-  /* background-color: yellowgreen; */
+  min-height: 48px;
   display: flex;
-  justify-content: space-between;
+  align-items: stretch;
   box-shadow: 0px 0px 5px rgba(175, 174, 174, 0.06);
-  margin: 16px 0px 16px 0px;
-  padding: 0px 16px 0px 16px;
+  margin: 16px 0;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.recurring-row-left {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  gap: 4px 12px;
+  min-width: 0;
+  flex: 1;
+  width: 100%;
+  align-content: start;
 }
 
 .recurring-row .dp {
-  width: 32px;
-  height: 32px;
-  border-radius: 20px;
-  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  grid-column: 1;
+  grid-row: 1 / -1;
+  align-self: start;
 }
 
-.recurring-row-cta {
+.recurring-row-info {
+  grid-column: 2;
+  grid-row: 1 / -1;
   display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.recurring-bill-title {
+  margin: 0;
+  font-weight: 700;
+}
+
+.recurring-row-meta {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  background-color:;
-  width: 100%;
-  padding-left: 70px;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: 2px;
 }
 
-.recurring-dp-name {
-  display: flex;
-  grid-column: span;
-  gap: 10px;
-  align-items: center;
-  width: 319px;
-  height: 32px;
+.recurring-due-date {
+  margin: 0;
+  color: #696868;
+}
+
+.recurring-row-amount {
+  margin: 0;
+  flex-shrink: 0;
+  text-align: right;
 }
 
 /* =========================
@@ -1424,4 +1580,423 @@
 
 .dropdown-menu li:hover {
   background-color: #f8f4f0;
+}
+
+/* =========================
+   Responsive: Layout & Sidebar
+   Breakpoints: mobile <640, tablet 640–1024, desktop 1024+
+========================= */
+
+@media (max-width: 1024px) {
+  .layout-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-content {
+    padding-top: calc(56px + 1.5rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px) + 1.5rem);
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .bottom-nav {
+    display: block;
+  }
+}
+
+@media (min-width: 1025px) {
+  .bottom-nav {
+    display: none !important;
+  }
+}
+
+/* =========================
+   Responsive: Overview page
+========================= */
+
+@media (max-width: 1024px) {
+  /* Tablet & web: same row layout (Current Balance | Income | Expenses) */
+  .overview-card .row1 {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 16px;
+    margin: 24px 0;
+    height: auto;
+    min-height: 119px;
+  }
+
+  .overview-card .CB,
+  .overview-card .displayincome {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+    height: 119px;
+  }
+
+  .overview-cluster {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .overview-c1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .overview-c1 .overview-pot {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 180px;
+  }
+
+  .overview-pot-row1 {
+    width: 100%;
+  }
+
+  .overview-display-pot-row-2 {
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .overview-display-pot-row-2 .pot-total-saved,
+  .overview-display-pot-row-2 .overview-display-pot-row-2-secound-half {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .overview .overview-transaction {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 300px;
+  }
+
+  .overview .overview-transaction .overview-transaction-line1,
+  .overview .overview-transaction .overview-transaction-line2 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .overview .overview-transaction .overview-transaction-line2 .section1 {
+    width: auto;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .overview-c2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .overview-c2 .overview-budgets {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 320px;
+  }
+
+  .overview-c2 .overview-budgets .overview-budgets-row1 {
+    width: 100%;
+  }
+
+  .overview-c2 .overview-recurring-bill {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .overview-c2 .overview-recurring-bill .overview-recurring-bill-row1,
+  .overview-c2 .overview-recurring-bill .overview-recurring-bill-list {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Mobile only: column layout — Current Balance, then Income, then Expenses */
+  .overview-card .row1 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .overview-card .CB,
+  .overview-card .displayincome {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+    min-width: 0;
+    height: 119px;
+  }
+
+  .overview-display-pot-row-2 {
+    flex-direction: column;
+  }
+
+  .overview-display-pot-row-2 .overview-display-pot-row-2-secound-half {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .overview-display-pot-c-1,
+  .overview-display-pot-c-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .pot-savings-lable,
+  .pot-gift,
+  .pot-Concert,
+  .pot-Laptop {
+    flex: 1 1 120px;
+    min-width: 0;
+  }
+}
+
+/* =========================
+   Responsive: Transactions, Recurring, Pots, Budgets
+========================= */
+
+@media (max-width: 1024px) {
+  .page-transactions {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 20px 16px;
+  }
+
+  .transaction-controls {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .transaction-search {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .transaction-controls-dropdown {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .transaction-description,
+  .page-transactions .transaction-row,
+  .transaction-footer {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .transaction-description {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .transaction-description .transaction-elements {
+    flex-wrap: wrap;
+  }
+
+  .page-recurring {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .page-recurring-totalbills,
+  .page-recurring-summary {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .page-recurring-billslogs {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .page-recurring-controls,
+  .page-recurring .recurring-descriptions,
+  .page-recurring .recurring-row {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .page-recurring-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    min-height: 45px;
+    height: auto;
+  }
+
+  .page-recurring-controls > div:first-child {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .page-recurring-controls .recurring-search {
+    width: 100%;
+    max-width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+  }
+
+  .page-recurring-controls .recurring-controls-dropdown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width: auto;
+    flex-shrink: 0;
+    min-height: 45px;
+  }
+
+  .page-recurring-controls .recurring-controls-dropdown .transaction-sort {
+    height: 45px;
+    min-width: 120px;
+    box-sizing: border-box;
+  }
+
+  .page-pots {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .pot-T-B,
+  .pots-components {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .pots-components {
+    grid-template-columns: 1fr;
+  }
+
+  .pots-components-template {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .pots-components-buttons,
+  .pots-components-progress-bar {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .budgets-components {
+    grid-template-columns: 1fr;
+  }
+
+  .budgets-component-graph,
+  .budgets-components-template {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .budgets-component-fig {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .budgets-components-transaction-log {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .budgets-component-pot-row1 {
+    width: 100%;
+  }
+
+  .budgets-components-progress-bar {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .add-budget,
+  .deleted-budget {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .title-control,
+  .budget-form,
+  .dropdown,
+  .amount-box .add-amount,
+  .submit-button,
+  .decision-buttons,
+  .deletedbuttons,
+  .goback-buttons {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .pot-modal {
+    margin: 16px;
+    max-width: calc(100% - 32px);
+  }
+}
+
+@media (max-width: 640px) {
+  .main-content {
+    padding: 1rem;
+    padding-top: calc(56px + 1rem);
+  }
+
+  .page h1 {
+    font-size: 1.5rem;
+  }
+
+  .transaction-row .cta {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .transaction-row .cta-category,
+  .transaction-row .cta-dates,
+  .transaction-row .cta-amount {
+    padding-left: 0;
+    width: 100%;
+    text-align: start;
+  }
+
+  .transaction-footer-buttons {
+    flex-wrap: wrap;
+  }
+
+  .page-recurring .recurring-row {
+    width: 100%;
+    max-width: 100%;
+    align-items: flex-start;
+  }
+
+  .recurring-row-left {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .recurring-row-amount {
+    flex-shrink: 0;
+  }
 }

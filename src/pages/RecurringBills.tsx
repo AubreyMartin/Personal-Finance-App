@@ -109,23 +109,24 @@ function Recurring() {
           <div className="recurring-log">
             {data
               .filter((transaction) => transaction.recurring)
-
               .map((transaction, index) => (
                 <div className="recurring-row" key={index}>
-                  <div className="recurring-dp-name">
+                  <div className="recurring-row-left">
                     <img src={transaction.avatar} alt="" className="dp" />
-                    <p className="label text-preset-4-bold">{transaction.name}</p>
-                  </div>
-
-                  <div className="recurring-row-cta text-preset-5 ">
-                    <p className="cta-dates text-preset-5">
-                      Monthly – {new Date(transaction.date).getDate()}
-                      {['th', 'st', 'nd', 'rd'][
-                        (((new Date(transaction.date).getDate() + 90) % 100) - 10) % 10
-                      ] || 'th'}
-                    </p>
-
-                    <p className="cta-amount text-preset-4-bold"> ${transaction.amount}</p>
+                    <div className="recurring-row-info">
+                      <p className="recurring-bill-title text-preset-4-bold">{transaction.name}</p>
+                      <div className="recurring-row-meta">
+                        <span className="recurring-due-date text-preset-5">
+                          Monthly – {new Date(transaction.date).getDate()}
+                          {['th', 'st', 'nd', 'rd'][
+                            (((new Date(transaction.date).getDate() + 90) % 100) - 10) % 10
+                          ] || 'th'}
+                        </span>
+                        <span className="recurring-row-amount text-preset-4-bold">
+                          ${transaction.amount}
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}
