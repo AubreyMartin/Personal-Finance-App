@@ -1,10 +1,18 @@
 import { useEffect, useState } from 'react';
-import type { Transaction, Balance } from '../types';
+import type { Transaction, Balance, Budget } from '../types';
 import { useNavigate } from 'react-router-dom';
 import { usePotsInfo } from '../hooks/usePotsInfo';
 // import PieChartOverview from '../components/PieChartOverview';
 import DonutChart from '../components/PieChartMUI';
 import { getBudgets } from '../api/budgetsApi';
+
+interface BudgetChartItem {
+  id: number;
+  label: string;
+  value: number;
+  color: string;
+  limit: number;
+}
 
 function Overview() {
   const [balance, setBalance] = useState<Balance>({ current: 0, income: 0, expenses: 0 });
@@ -21,12 +29,12 @@ function Overview() {
   //   { id: 3, label: 'Personal Care', value: 40, color: '#5E5E6E', limit: 100 },
   // ];
 
-  const [budgetsData, setBudgetData] = useState([]);
+  const [budgetsData, setBudgetData] = useState<BudgetChartItem[]>([]);
 
   useEffect(() => {
-    getBudgets().then((budgets) => {
+    getBudgets().then((budgets: (Budget & { id: number })[]) => {
       setBudgetData(
-        budgets.map((budget) => ({
+        budgets.map((budget: Budget & { id: number }) => ({
           id: budget.id,
           label: budget.category,
           value: budget.maximum,
