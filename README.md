@@ -1,43 +1,40 @@
 💰 Personal Finance App
 
-A modern personal finance dashboard built with React + TypeScript,
-focused on real-world financial tracking:
-transactions, budgets, savings pots, and recurring bills.
+A modern personal finance dashboard built with React + TypeScript for tracking transactions, budgets, savings pots, and recurring bills.
 
-This project is based on a Frontend Mentor challenge and extended with scalable architecture, c
-lean state management, and production-style planning.
+Designed with scalable architecture and production-style planning.
 
 🚀 Features
 
-📊 Overview Dashboard
+📊 Dashboard
 
-Balance, income, expenses
+Balance, income, expenses overview
 
-Visual charts for spending insights
+Spending insights with charts
 
 💳 Transactions
 
-Filter, search, and sort transactions
+Filter, search, and sort
 
-Category-based breakdown
+Category-based tracking
 
 🎯 Budgets
 
 Track spending by category
 
-Progress indicators and over-budget alerts
+Progress indicators and alerts
 
 🏦 Savings Pots
 
 Add and withdraw money
 
-Real-time balance sync across app
+Real-time balance updates
 
 🔁 Recurring Bills
 
-Monthly bills tracking
+Monthly bill tracking
 
-Upcoming / paid / overdue status
+Upcoming, paid, and overdue status
 
 🧠 Tech Stack
 
@@ -51,81 +48,38 @@ Material UI (MUI)
 
 React Router
 
-Zustand (state management)
+Zustand
 
-Recharts (data visualization)
+Recharts
 
-Planned (Phase 2)
+Planned
 
 Node.js + Express
 
-Database (PostgreSQL / MongoDB)
+PostgreSQL / MongoDB
 
 JWT Authentication
 
 🗂️ Project Structure
 src/
-├─ app/ # Global store & types
-├─ layout/ # App layout components
-├─ pages/ # Feature pages
-├─ components/ # Reusable UI components
+├─ app/
+├─ layout/
+├─ pages/
+├─ components/
 ├─ App.tsx
 └─ main.tsx
-
-📌 Project Management
-
-This project is planned and executed using Jira-style epics and stories, following real-world agile practices.
-
-Key highlights:
-
-Clear epics and acceptance criteria
-
-Feature-first development
-
-Scalable architecture decisions
-
-This repo is meant to demonstrate how I plan, structure, and ship production-ready frontend applications.
-
-🛠️ Setup & Run Locally
-
-# Clone repo
-
+⚙️ Run Locally
 git clone https://github.com/your-username/personal-finance-app.git
-
-# Install dependencies
-
 npm install
-
-# Start dev server
-
 npm run dev
-
-🧪 Current Status
+📌 Status
 
 ✅ Project setup & routing
-
-✅ App layout with sidebar navigation
-
-✅ Global state structure
-
+✅ App layout
+✅ Global state setup
 🚧 Transactions page (in progress)
-
-🔜 Dashboard, Budgets, Pots, Bills
-
-📈 Future Improvements
-
-Backend integration
-
-User authentication
-
-Persistent data storage
-
-Unit & integration tests
-
-Dark mode support
 
 👤 Author
 
 Aubs
 Full Stack Developer | Software Engineering
-Focused on building clean, scalable, real-world applications.
