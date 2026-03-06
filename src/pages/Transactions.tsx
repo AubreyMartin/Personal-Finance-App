@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 
 import type { Transaction } from '../types';
 
@@ -10,6 +10,8 @@ function Transactions() {
   const [sortBy, setSortBy] = useState('latest');
   const [category, setCategory] = useState('all');
   const [currentPage, setCurrentPage] = useState(1);
+  const sortSelectRef = useRef<HTMLSelectElement>(null);
+  const categorySelectRef = useRef<HTMLSelectElement>(null);
 
   useEffect(() => {
     fetch('/data.json')
@@ -91,9 +93,23 @@ function Transactions() {
           </div>
 
           <div className="transaction-controls-dropdown text-preset-4">
-            Sort by
-            <div>
+            <div className="transaction-sort-wrap">
+              <button
+                type="button"
+                className="transaction-sort-icon-mobile-btn"
+                onClick={() => sortSelectRef.current?.showPicker?.() ?? sortSelectRef.current?.click()}
+                aria-label="Sort by"
+              >
+                <img
+                  src="/assets/images/icon-sort-mobile.svg"
+                  alt=""
+                  className="transaction-sort-icon-mobile"
+                  aria-hidden
+                />
+              </button>
+              <span className="transaction-sort-label">Sort by</span>
               <select
+                ref={sortSelectRef}
                 className="transaction-sort"
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
@@ -106,9 +122,25 @@ function Transactions() {
                 <option value="lowest">Lowest</option>
               </select>
             </div>
-            Category
-            <div>
+            <div className="transaction-category-wrap">
+              <button
+                type="button"
+                className="transaction-filter-icon-mobile-btn"
+                onClick={() =>
+                  categorySelectRef.current?.showPicker?.() ?? categorySelectRef.current?.click()
+                }
+                aria-label="Filter by category"
+              >
+                <img
+                  src="/assets/images/icon-filter-mobile.svg"
+                  alt=""
+                  className="transaction-filter-icon-mobile"
+                  aria-hidden
+                />
+              </button>
+              <span className="transaction-category-label">Category</span>
               <select
+                ref={categorySelectRef}
                 className="transaction-category"
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
@@ -144,7 +176,12 @@ function Transactions() {
             >
               <div className="dp-name">
                 <img src={transaction.avatar} alt="" className="dp" />
-                <p className="label text-preset-4-bold">{transaction.name}</p>
+                <div className="dp-name-text">
+                  <p className="label text-preset-4-bold">{transaction.name}</p>
+                  <p className="transaction-category-mobile text-preset-5">
+                    {transaction.category}
+                  </p>
+                </div>
               </div>
 
               <div className="cta text-preset-5 ">
